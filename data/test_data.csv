@@ -1,501 +1,501 @@
-"ID","Class","Trinket","Map","Game_ID","Kills","Coins","Is_Complete"
-1,"Ranger","Accelerator","Polaris",18,0,5,FALSE
-2,"Skirmisher","Spring Plume","Sunken",39,5,4,TRUE
-3,"Battlesmith","Nox Bomb","Golden",7,0,26,TRUE
-4,"Titan","Risk-it-Biscuit","Fissure",33,0,26,TRUE
-5,"Titan","Smoke Screen","Graphite",45,2,12,TRUE
-6,"Chronomancer","Lava Cake","Bogpit",21,0,9,TRUE
-7,"Spectre","Echo Bolt","Dustworks",28,5,26,TRUE
-8,"Cloudbreaker","Risk-it-Biscuit","Golden",29,4,32,TRUE
-9,"Battlesmith","Smoke Screen","Scald",4,1,11,TRUE
-10,"Cloudbreaker","Spring Plume","Dustworks",32,2,30,TRUE
-11,"Artillery","Flame Trap","Bogpit",17,1,10,TRUE
-12,"Hexblade","Smoke Screen","Golden",7,1,2,TRUE
-13,"Stargazer","Echo Bolt","Dustworks",11,5,25,TRUE
-14,"Alchemist","Nox Bomb","Bogpit",23,2,39,TRUE
-15,"Stargazer","Accelerator","Fissure",23,3,10,TRUE
-16,"Evincer","Accelerator","Graphite",21,4,15,TRUE
-17,"Battlesmith","Echo Bolt","Deepgrove",31,4,9,TRUE
-18,"Alchemist","Nox Bomb","Sunken",31,1,20,TRUE
-19,"Evincer","Lava Cake","Dustworks",26,3,38,TRUE
-20,"Stargazer","Echo Bolt","Graphite",44,0,30,TRUE
-21,"Titan","Hedge Seed","Graphite",39,5,11,TRUE
-22,"Cloudbreaker","Spring Plume","Crystal",9,4,10,TRUE
-23,"Frost Knight","Bandage","Graphite",48,5,29,TRUE
-24,"Alchemist","Accelerator","Scald",11,4,31,TRUE
-25,"Champion","Hedge Seed","Fissure",41,1,29,TRUE
-26,"Evincer","Hedge Seed","Deepgrove",43,1,17,FALSE
-27,"Champion","Accelerator","Fissure",3,1,27,TRUE
-28,"Dancer","Nox Bomb","Dustworks",2,2,29,TRUE
-29,"Stargazer","Nox Bomb","Graphite",14,2,14,FALSE
-30,"Ranger","Accelerator","Dustworks",24,3,19,TRUE
-31,"Cloudbreaker","Nox Bomb","Crystal",41,2,27,TRUE
-32,"Griefer","Vigor Flask","Golden",11,2,30,TRUE
-33,"Evincer","Lava Cake","Graphite",11,4,1,FALSE
-34,"Artillery","Risk-it-Biscuit","Scald",38,1,33,TRUE
-35,"Skirmisher","Echo Bolt","Deepgrove",42,2,26,TRUE
-36,"Griefer","Accelerator","Sunken",23,3,28,TRUE
-37,"Dancer","Vigor Flask","Fissure",30,3,2,TRUE
-38,"Stargazer","Lava Cake","Sunken",24,5,3,TRUE
-39,"Battlesmith","Vigor Flask","Dustworks",13,4,22,FALSE
-40,"Hexblade","Flame Trap","Fissure",50,4,8,TRUE
-41,"Champion","Echo Bolt","Crystal",28,3,24,TRUE
-42,"Cloudbreaker","Risk-it-Biscuit","Scald",49,0,30,TRUE
-43,"Champion","Smoke Screen","Bogpit",21,0,23,TRUE
-44,"Evincer","Nox Bomb","Dustworks",31,5,3,TRUE
-45,"Titan","Spring Plume","Golden",45,3,32,TRUE
-46,"Alchemist","Lava Cake","Skullway",18,1,23,TRUE
-47,"Griefer","Flame Trap","Golden",43,4,23,TRUE
-48,"Skirmisher","Risk-it-Biscuit","Sunken",30,0,32,TRUE
-49,"Dancer","Accelerator","Sunken",37,3,4,FALSE
-50,"Griefer","Vigor Flask","Bogpit",11,5,33,TRUE
-51,"Hexblade","Bandage","Bogpit",9,2,11,TRUE
-52,"Dancer","Flame Trap","Skullway",37,4,32,FALSE
-53,"Hexblade","Vigor Flask","Crystal",49,1,30,TRUE
-54,"Vampire","Lava Cake","Golden",3,3,37,TRUE
-55,"Chronomancer","Vigor Flask","Graphite",35,0,3,TRUE
-56,"Skirmisher","Smoke Screen","Deepgrove",32,3,34,TRUE
-57,"Dancer","Lava Cake","Crystal",26,1,28,TRUE
-58,"Titan","Smoke Screen","Graphite",42,2,12,TRUE
-59,"Battlesmith","Smoke Screen","Dustworks",9,2,11,TRUE
-60,"Cloudbreaker","Flame Trap","Scald",29,2,5,TRUE
-61,"Griefer","Flame Trap","Skullway",1,2,32,TRUE
-62,"Spectre","Accelerator","Skullway",18,2,25,TRUE
-63,"Cloudbreaker","Spring Plume","Polaris",48,0,18,TRUE
-64,"Artillery","Nox Bomb","Polaris",38,4,17,TRUE
-65,"Griefer","Nox Bomb","Deepgrove",20,3,38,TRUE
-66,"Titan","Hedge Seed","Sunken",45,3,40,TRUE
-67,"Alchemist","Accelerator","Scald",40,4,33,TRUE
-68,"Ranger","Smoke Screen","Graphite",6,3,33,TRUE
-69,"Chronomancer","Lava Cake","Sunken",45,5,39,TRUE
-70,"Vampire","Echo Bolt","Dustworks",11,0,34,TRUE
-71,"Dancer","Nox Bomb","Skullway",21,3,31,TRUE
-72,"Stargazer","Risk-it-Biscuit","Crystal",36,4,12,TRUE
-73,"Titan","Risk-it-Biscuit","Scald",11,4,30,TRUE
-74,"Titan","Spring Plume","Crystal",32,1,16,TRUE
-75,"Vampire","Lava Cake","Deepgrove",36,1,16,TRUE
-76,"Spectre","Smoke Screen","Sunken",33,3,10,TRUE
-77,"Skirmisher","Echo Bolt","Bogpit",42,1,36,TRUE
-78,"Chronomancer","Risk-it-Biscuit","Fissure",22,4,35,TRUE
-79,"Ranger","Risk-it-Biscuit","Fissure",17,4,21,TRUE
-80,"Champion","Accelerator","Sunken",16,1,28,TRUE
-81,"Spectre","Smoke Screen","Polaris",12,1,4,TRUE
-82,"Dancer","Risk-it-Biscuit","Fissure",1,4,2,TRUE
-83,"Dancer","Flame Trap","Polaris",36,1,26,TRUE
-84,"Champion","Nox Bomb","Polaris",14,3,27,TRUE
-85,"Champion","Bandage","Graphite",36,5,23,FALSE
-86,"Griefer","Lava Cake","Deepgrove",2,5,29,TRUE
-87,"Spectre","Vigor Flask","Scald",26,4,8,TRUE
-88,"Dancer","Vigor Flask","Deepgrove",4,0,28,TRUE
-89,"Griefer","Accelerator","Golden",14,1,19,FALSE
-90,"Griefer","Risk-it-Biscuit","Bogpit",14,2,22,TRUE
-91,"Evincer","Vigor Flask","Graphite",11,5,33,TRUE
-92,"Spectre","Spring Plume","Sunken",4,4,4,TRUE
-93,"Cloudbreaker","Risk-it-Biscuit","Dustworks",11,0,14,TRUE
-94,"Cloudbreaker","Lava Cake","Fissure",48,2,36,TRUE
-95,"Dancer","Risk-it-Biscuit","Scald",18,4,17,FALSE
-96,"Vampire","Bandage","Graphite",8,4,7,TRUE
-97,"Griefer","Nox Bomb","Skullway",21,3,38,TRUE
-98,"Alchemist","Nox Bomb","Golden",38,2,20,TRUE
-99,"Titan","Bandage","Fissure",4,0,10,TRUE
-100,"Alchemist","Accelerator","Sunken",7,3,23,TRUE
-101,"Ranger","Spring Plume","Graphite",23,5,28,FALSE
-102,"Artillery","Hedge Seed","Crystal",39,1,38,TRUE
-103,"Alchemist","Risk-it-Biscuit","Sunken",14,3,32,TRUE
-104,"Battlesmith","Hedge Seed","Bogpit",12,4,22,TRUE
-105,"Spectre","Flame Trap","Fissure",21,4,20,TRUE
-106,"Champion","Nox Bomb","Bogpit",17,1,19,TRUE
-107,"Hexblade","Nox Bomb","Crystal",50,2,24,TRUE
-108,"Griefer","Risk-it-Biscuit","Bogpit",3,5,7,TRUE
-109,"Stargazer","Lava Cake","Dustworks",34,0,11,FALSE
-110,"Griefer","Spring Plume","Sunken",40,4,22,TRUE
-111,"Alchemist","Hedge Seed","Deepgrove",39,5,32,TRUE
-112,"Alchemist","Risk-it-Biscuit","Skullway",14,2,27,FALSE
-113,"Spectre","Nox Bomb","Scald",38,3,27,TRUE
-114,"Alchemist","Nox Bomb","Crystal",38,4,39,TRUE
-115,"Titan","Flame Trap","Scald",37,2,28,TRUE
-116,"Dancer","Echo Bolt","Bogpit",46,1,4,TRUE
-117,"Chronomancer","Nox Bomb","Graphite",13,2,38,TRUE
-118,"Battlesmith","Echo Bolt","Dustworks",25,0,13,TRUE
-119,"Alchemist","Hedge Seed","Scald",16,3,34,TRUE
-120,"Hexblade","Bandage","Sunken",36,3,16,TRUE
-121,"Skirmisher","Bandage","Fissure",14,5,22,TRUE
-122,"Vampire","Flame Trap","Crystal",7,1,18,TRUE
-123,"Titan","Risk-it-Biscuit","Fissure",26,1,4,FALSE
-124,"Vampire","Bandage","Skullway",42,1,22,TRUE
-125,"Stargazer","Bandage","Sunken",30,1,12,TRUE
-126,"Vampire","Hedge Seed","Scald",39,2,20,TRUE
-127,"Vampire","Echo Bolt","Fissure",26,0,21,TRUE
-128,"Hexblade","Smoke Screen","Crystal",3,2,18,TRUE
-129,"Cloudbreaker","Smoke Screen","Fissure",49,1,20,TRUE
-130,"Battlesmith","Spring Plume","Scald",30,2,10,FALSE
-131,"Titan","Flame Trap","Skullway",23,5,33,TRUE
-132,"Griefer","Spring Plume","Fissure",32,2,8,TRUE
-133,"Battlesmith","Lava Cake","Polaris",10,3,12,TRUE
-134,"Ranger","Hedge Seed","Skullway",49,2,24,TRUE
-135,"Evincer","Risk-it-Biscuit","Golden",11,0,32,TRUE
-136,"Vampire","Spring Plume","Polaris",1,3,22,TRUE
-137,"Artillery","Risk-it-Biscuit","Fissure",25,1,30,TRUE
-138,"Skirmisher","Echo Bolt","Golden",41,1,14,TRUE
-139,"Dancer","Nox Bomb","Golden",2,5,5,TRUE
-140,"Vampire","Flame Trap","Crystal",28,0,29,TRUE
-141,"Champion","Echo Bolt","Polaris",4,1,1,TRUE
-142,"Skirmisher","Vigor Flask","Bogpit",1,3,24,TRUE
-143,"Ranger","Lava Cake","Deepgrove",39,4,18,TRUE
-144,"Cloudbreaker","Vigor Flask","Dustworks",22,2,34,TRUE
-145,"Champion","Lava Cake","Polaris",26,5,14,TRUE
-146,"Alchemist","Hedge Seed","Crystal",16,3,38,TRUE
-147,"Ranger","Flame Trap","Polaris",35,2,7,TRUE
-148,"Evincer","Hedge Seed","Bogpit",2,3,4,TRUE
-149,"Spectre","Vigor Flask","Golden",32,1,16,TRUE
-150,"Skirmisher","Nox Bomb","Scald",5,4,16,TRUE
-151,"Champion","Accelerator","Crystal",35,1,4,TRUE
-152,"Alchemist","Lava Cake","Golden",18,0,5,FALSE
-153,"Frost Knight","Nox Bomb","Golden",16,5,37,TRUE
-154,"Chronomancer","Risk-it-Biscuit","Fissure",32,0,12,FALSE
-155,"Dancer","Echo Bolt","Skullway",41,0,36,TRUE
-156,"Cloudbreaker","Smoke Screen","Bogpit",9,1,30,TRUE
-157,"Dancer","Nox Bomb","Deepgrove",35,3,19,TRUE
-158,"Frost Knight","Echo Bolt","Golden",24,1,33,TRUE
-159,"Champion","Echo Bolt","Scald",13,5,7,TRUE
-160,"Champion","Hedge Seed","Skullway",45,5,27,TRUE
-161,"Frost Knight","Vigor Flask","Graphite",6,1,34,TRUE
-162,"Hexblade","Risk-it-Biscuit","Skullway",47,5,29,TRUE
-163,"Vampire","Accelerator","Bogpit",35,1,36,TRUE
-164,"Champion","Spring Plume","Graphite",36,3,12,TRUE
-165,"Battlesmith","Accelerator","Skullway",24,2,33,TRUE
-166,"Titan","Hedge Seed","Dustworks",34,3,30,TRUE
-167,"Champion","Risk-it-Biscuit","Graphite",40,5,3,TRUE
-168,"Champion","Echo Bolt","Graphite",34,2,28,TRUE
-169,"Spectre","Spring Plume","Bogpit",4,5,13,TRUE
-170,"Cloudbreaker","Smoke Screen","Golden",32,2,30,TRUE
-171,"Vampire","Flame Trap","Skullway",46,1,23,TRUE
-172,"Alchemist","Hedge Seed","Bogpit",5,0,36,TRUE
-173,"Griefer","Smoke Screen","Polaris",20,2,12,TRUE
-174,"Hexblade","Bandage","Scald",9,3,28,TRUE
-175,"Titan","Accelerator","Dustworks",4,0,1,TRUE
-176,"Alchemist","Smoke Screen","Polaris",6,2,27,TRUE
-177,"Chronomancer","Smoke Screen","Polaris",11,2,30,FALSE
-178,"Spectre","Accelerator","Scald",47,4,20,TRUE
-179,"Cloudbreaker","Bandage","Golden",44,1,9,TRUE
-180,"Battlesmith","Hedge Seed","Scald",46,2,8,TRUE
-181,"Spectre","Bandage","Skullway",47,4,7,TRUE
-182,"Cloudbreaker","Echo Bolt","Bogpit",7,1,24,TRUE
-183,"Stargazer","Nox Bomb","Golden",47,3,39,TRUE
-184,"Griefer","Flame Trap","Golden",23,3,21,TRUE
-185,"Dancer","Vigor Flask","Graphite",21,2,27,TRUE
-186,"Cloudbreaker","Accelerator","Deepgrove",21,4,35,TRUE
-187,"Skirmisher","Smoke Screen","Deepgrove",7,5,9,TRUE
-188,"Battlesmith","Lava Cake","Golden",2,0,33,TRUE
-189,"Frost Knight","Lava Cake","Golden",11,4,10,TRUE
-190,"Spectre","Spring Plume","Crystal",35,1,28,TRUE
-191,"Spectre","Bandage","Graphite",30,3,28,TRUE
-192,"Griefer","Flame Trap","Bogpit",40,4,26,TRUE
-193,"Alchemist","Smoke Screen","Scald",18,4,21,TRUE
-194,"Artillery","Vigor Flask","Crystal",20,1,33,TRUE
-195,"Skirmisher","Bandage","Bogpit",41,1,10,TRUE
-196,"Hexblade","Accelerator","Dustworks",2,0,4,TRUE
-197,"Stargazer","Flame Trap","Golden",39,4,8,TRUE
-198,"Titan","Smoke Screen","Graphite",43,4,38,TRUE
-199,"Spectre","Hedge Seed","Graphite",44,5,21,TRUE
-200,"Ranger","Lava Cake","Sunken",38,0,30,TRUE
-201,"Spectre","Risk-it-Biscuit","Polaris",31,3,29,TRUE
-202,"Hexblade","Echo Bolt","Graphite",33,5,16,TRUE
-203,"Vampire","Bandage","Deepgrove",10,5,23,TRUE
-204,"Vampire","Vigor Flask","Sunken",21,4,13,TRUE
-205,"Titan","Lava Cake","Graphite",8,5,20,TRUE
-206,"Chronomancer","Nox Bomb","Deepgrove",36,4,25,TRUE
-207,"Hexblade","Bandage","Scald",37,2,6,TRUE
-208,"Cloudbreaker","Risk-it-Biscuit","Scald",49,0,22,TRUE
-209,"Frost Knight","Flame Trap","Scald",45,0,37,TRUE
-210,"Spectre","Echo Bolt","Polaris",27,2,38,TRUE
-211,"Stargazer","Hedge Seed","Deepgrove",45,4,8,TRUE
-212,"Champion","Bandage","Golden",34,4,8,TRUE
-213,"Ranger","Lava Cake","Scald",18,0,16,TRUE
-214,"Cloudbreaker","Accelerator","Bogpit",43,3,30,TRUE
-215,"Hexblade","Vigor Flask","Golden",49,1,24,TRUE
-216,"Spectre","Flame Trap","Scald",6,1,3,TRUE
-217,"Alchemist","Echo Bolt","Polaris",25,4,10,TRUE
-218,"Skirmisher","Flame Trap","Deepgrove",21,1,27,TRUE
-219,"Vampire","Bandage","Fissure",45,1,32,TRUE
-220,"Stargazer","Vigor Flask","Scald",26,4,39,TRUE
-221,"Artillery","Hedge Seed","Dustworks",24,5,12,TRUE
-222,"Cloudbreaker","Hedge Seed","Skullway",11,4,21,TRUE
-223,"Ranger","Hedge Seed","Crystal",16,0,32,TRUE
-224,"Stargazer","Hedge Seed","Dustworks",23,2,28,TRUE
-225,"Chronomancer","Bandage","Deepgrove",18,0,15,TRUE
-226,"Griefer","Risk-it-Biscuit","Scald",50,0,23,TRUE
-227,"Battlesmith","Spring Plume","Graphite",31,1,3,TRUE
-228,"Cloudbreaker","Nox Bomb","Deepgrove",29,4,3,TRUE
-229,"Griefer","Spring Plume","Crystal",4,3,38,TRUE
-230,"Dancer","Bandage","Fissure",38,5,1,TRUE
-231,"Skirmisher","Echo Bolt","Skullway",37,5,12,TRUE
-232,"Vampire","Bandage","Skullway",21,2,40,TRUE
-233,"Skirmisher","Smoke Screen","Polaris",31,4,21,TRUE
-234,"Spectre","Hedge Seed","Scald",36,3,26,TRUE
-235,"Champion","Hedge Seed","Crystal",40,1,36,TRUE
-236,"Stargazer","Smoke Screen","Scald",42,2,17,TRUE
-237,"Titan","Hedge Seed","Dustworks",36,3,13,TRUE
-238,"Griefer","Accelerator","Golden",37,0,33,TRUE
-239,"Dancer","Spring Plume","Golden",2,5,1,TRUE
-240,"Evincer","Spring Plume","Bogpit",44,3,37,TRUE
-241,"Battlesmith","Echo Bolt","Bogpit",48,4,2,TRUE
-242,"Cloudbreaker","Echo Bolt","Bogpit",41,2,27,TRUE
-243,"Hexblade","Lava Cake","Scald",33,5,31,TRUE
-244,"Cloudbreaker","Flame Trap","Fissure",44,2,1,TRUE
-245,"Champion","Flame Trap","Fissure",46,3,26,TRUE
-246,"Cloudbreaker","Vigor Flask","Dustworks",38,4,33,TRUE
-247,"Frost Knight","Nox Bomb","Deepgrove",16,3,8,TRUE
-248,"Stargazer","Hedge Seed","Scald",49,3,15,TRUE
-249,"Stargazer","Flame Trap","Dustworks",19,4,11,TRUE
-250,"Griefer","Echo Bolt","Sunken",50,5,27,FALSE
-251,"Cloudbreaker","Bandage","Crystal",41,3,23,TRUE
-252,"Battlesmith","Spring Plume","Scald",4,5,12,TRUE
-253,"Spectre","Flame Trap","Golden",35,1,14,TRUE
-254,"Alchemist","Flame Trap","Graphite",10,2,28,TRUE
-255,"Griefer","Flame Trap","Sunken",6,2,37,TRUE
-256,"Griefer","Nox Bomb","Polaris",36,0,7,TRUE
-257,"Skirmisher","Bandage","Polaris",36,1,20,TRUE
-258,"Cloudbreaker","Accelerator","Dustworks",39,1,9,TRUE
-259,"Griefer","Smoke Screen","Skullway",15,0,32,TRUE
-260,"Titan","Flame Trap","Polaris",7,4,8,TRUE
-261,"Champion","Echo Bolt","Polaris",15,0,1,TRUE
-262,"Stargazer","Lava Cake","Polaris",38,3,34,TRUE
-263,"Evincer","Smoke Screen","Polaris",29,2,5,TRUE
-264,"Frost Knight","Smoke Screen","Sunken",26,2,26,TRUE
-265,"Artillery","Risk-it-Biscuit","Scald",10,4,38,TRUE
-266,"Frost Knight","Vigor Flask","Fissure",44,3,6,TRUE
-267,"Champion","Vigor Flask","Deepgrove",23,2,32,TRUE
-268,"Artillery","Nox Bomb","Fissure",7,4,33,TRUE
-269,"Stargazer","Vigor Flask","Skullway",28,1,33,TRUE
-270,"Griefer","Hedge Seed","Fissure",11,2,1,TRUE
-271,"Chronomancer","Smoke Screen","Crystal",39,5,40,TRUE
-272,"Alchemist","Risk-it-Biscuit","Bogpit",2,2,17,TRUE
-273,"Champion","Hedge Seed","Dustworks",6,3,21,TRUE
-274,"Griefer","Spring Plume","Crystal",19,1,19,TRUE
-275,"Artillery","Smoke Screen","Dustworks",22,4,25,TRUE
-276,"Dancer","Nox Bomb","Golden",17,3,22,TRUE
-277,"Stargazer","Hedge Seed","Golden",1,2,5,TRUE
-278,"Titan","Echo Bolt","Graphite",12,4,28,TRUE
-279,"Chronomancer","Spring Plume","Graphite",40,1,16,TRUE
-280,"Hexblade","Echo Bolt","Golden",17,3,15,TRUE
-281,"Dancer","Risk-it-Biscuit","Scald",6,1,7,TRUE
-282,"Evincer","Flame Trap","Scald",4,4,37,TRUE
-283,"Vampire","Flame Trap","Skullway",14,2,19,TRUE
-284,"Skirmisher","Spring Plume","Deepgrove",4,2,23,TRUE
-285,"Chronomancer","Vigor Flask","Scald",16,2,25,TRUE
-286,"Ranger","Bandage","Crystal",8,3,40,TRUE
-287,"Cloudbreaker","Lava Cake","Crystal",37,0,30,TRUE
-288,"Hexblade","Nox Bomb","Sunken",11,4,11,TRUE
-289,"Champion","Vigor Flask","Golden",49,3,10,FALSE
-290,"Griefer","Lava Cake","Skullway",8,4,14,TRUE
-291,"Spectre","Hedge Seed","Polaris",36,4,14,TRUE
-292,"Champion","Hedge Seed","Graphite",14,5,33,TRUE
-293,"Skirmisher","Vigor Flask","Scald",44,3,1,TRUE
-294,"Champion","Accelerator","Graphite",4,0,34,TRUE
-295,"Alchemist","Flame Trap","Skullway",13,2,23,TRUE
-296,"Griefer","Echo Bolt","Skullway",10,0,18,TRUE
-297,"Titan","Nox Bomb","Bogpit",21,0,11,TRUE
-298,"Evincer","Hedge Seed","Sunken",9,2,7,TRUE
-299,"Ranger","Risk-it-Biscuit","Dustworks",23,3,32,FALSE
-300,"Dancer","Echo Bolt","Golden",47,5,13,TRUE
-301,"Frost Knight","Nox Bomb","Bogpit",49,0,24,TRUE
-302,"Vampire","Risk-it-Biscuit","Graphite",35,3,5,TRUE
-303,"Frost Knight","Bandage","Fissure",46,1,16,TRUE
-304,"Titan","Bandage","Fissure",26,5,37,TRUE
-305,"Hexblade","Risk-it-Biscuit","Crystal",21,1,33,TRUE
-306,"Frost Knight","Smoke Screen","Graphite",21,3,2,TRUE
-307,"Frost Knight","Accelerator","Dustworks",22,3,20,TRUE
-308,"Stargazer","Accelerator","Bogpit",23,1,38,TRUE
-309,"Cloudbreaker","Echo Bolt","Dustworks",12,3,31,TRUE
-310,"Evincer","Nox Bomb","Dustworks",27,0,4,TRUE
-311,"Skirmisher","Accelerator","Graphite",27,0,21,TRUE
-312,"Hexblade","Lava Cake","Dustworks",24,1,38,TRUE
-313,"Champion","Bandage","Bogpit",35,5,5,TRUE
-314,"Battlesmith","Nox Bomb","Deepgrove",31,0,10,TRUE
-315,"Titan","Echo Bolt","Skullway",29,4,6,TRUE
-316,"Stargazer","Risk-it-Biscuit","Fissure",50,4,31,TRUE
-317,"Cloudbreaker","Risk-it-Biscuit","Crystal",49,4,1,TRUE
-318,"Frost Knight","Bandage","Golden",13,3,39,TRUE
-319,"Chronomancer","Flame Trap","Dustworks",38,5,24,TRUE
-320,"Vampire","Flame Trap","Crystal",20,2,6,TRUE
-321,"Cloudbreaker","Bandage","Polaris",23,3,28,TRUE
-322,"Frost Knight","Smoke Screen","Deepgrove",3,5,8,TRUE
-323,"Artillery","Risk-it-Biscuit","Golden",45,4,2,TRUE
-324,"Evincer","Accelerator","Graphite",33,5,27,TRUE
-325,"Dancer","Accelerator","Sunken",32,2,40,TRUE
-326,"Artillery","Hedge Seed","Polaris",13,0,9,TRUE
-327,"Champion","Risk-it-Biscuit","Skullway",32,2,28,TRUE
-328,"Ranger","Bandage","Polaris",40,2,17,TRUE
-329,"Alchemist","Smoke Screen","Scald",17,3,37,TRUE
-330,"Cloudbreaker","Lava Cake","Bogpit",10,1,7,TRUE
-331,"Champion","Smoke Screen","Deepgrove",30,3,4,TRUE
-332,"Griefer","Smoke Screen","Skullway",45,0,22,TRUE
-333,"Cloudbreaker","Lava Cake","Polaris",35,0,5,TRUE
-334,"Skirmisher","Bandage","Dustworks",25,4,37,TRUE
-335,"Artillery","Flame Trap","Scald",26,1,28,TRUE
-336,"Titan","Lava Cake","Graphite",34,4,29,TRUE
-337,"Chronomancer","Spring Plume","Crystal",15,1,24,TRUE
-338,"Evincer","Risk-it-Biscuit","Dustworks",26,1,24,TRUE
-339,"Cloudbreaker","Spring Plume","Deepgrove",19,5,7,TRUE
-340,"Champion","Nox Bomb","Graphite",4,5,16,TRUE
-341,"Spectre","Hedge Seed","Deepgrove",26,2,31,TRUE
-342,"Artillery","Risk-it-Biscuit","Bogpit",6,4,9,TRUE
-343,"Cloudbreaker","Echo Bolt","Dustworks",7,4,26,TRUE
-344,"Hexblade","Lava Cake","Scald",27,1,32,TRUE
-345,"Evincer","Risk-it-Biscuit","Dustworks",50,0,15,TRUE
-346,"Artillery","Vigor Flask","Skullway",38,5,17,TRUE
-347,"Dancer","Nox Bomb","Scald",15,5,39,TRUE
-348,"Spectre","Smoke Screen","Crystal",20,4,21,TRUE
-349,"Frost Knight","Flame Trap","Dustworks",34,0,7,TRUE
-350,"Alchemist","Flame Trap","Scald",32,0,16,TRUE
-351,"Titan","Vigor Flask","Skullway",35,3,18,TRUE
-352,"Evincer","Risk-it-Biscuit","Graphite",10,0,28,TRUE
-353,"Vampire","Smoke Screen","Polaris",3,1,17,TRUE
-354,"Chronomancer","Echo Bolt","Bogpit",33,1,4,TRUE
-355,"Skirmisher","Smoke Screen","Graphite",6,0,3,TRUE
-356,"Skirmisher","Smoke Screen","Scald",3,0,40,TRUE
-357,"Artillery","Lava Cake","Fissure",4,2,14,TRUE
-358,"Cloudbreaker","Echo Bolt","Crystal",49,4,1,TRUE
-359,"Artillery","Echo Bolt","Deepgrove",21,5,28,TRUE
-360,"Titan","Risk-it-Biscuit","Graphite",33,0,15,TRUE
-361,"Titan","Bandage","Scald",1,5,25,TRUE
-362,"Stargazer","Risk-it-Biscuit","Sunken",6,2,18,TRUE
-363,"Stargazer","Accelerator","Skullway",37,5,13,TRUE
-364,"Hexblade","Hedge Seed","Scald",46,5,38,TRUE
-365,"Ranger","Nox Bomb","Sunken",9,1,34,TRUE
-366,"Hexblade","Nox Bomb","Graphite",24,4,34,TRUE
-367,"Champion","Accelerator","Golden",44,5,26,TRUE
-368,"Evincer","Nox Bomb","Fissure",30,2,25,TRUE
-369,"Frost Knight","Echo Bolt","Crystal",49,1,16,TRUE
-370,"Titan","Lava Cake","Crystal",8,3,33,TRUE
-371,"Champion","Accelerator","Polaris",10,0,23,TRUE
-372,"Titan","Risk-it-Biscuit","Dustworks",40,1,9,TRUE
-373,"Alchemist","Smoke Screen","Fissure",5,3,9,TRUE
-374,"Spectre","Risk-it-Biscuit","Bogpit",35,4,21,TRUE
-375,"Frost Knight","Flame Trap","Crystal",35,1,17,FALSE
-376,"Spectre","Hedge Seed","Crystal",20,3,13,TRUE
-377,"Skirmisher","Vigor Flask","Dustworks",45,3,31,TRUE
-378,"Artillery","Smoke Screen","Dustworks",34,2,35,TRUE
-379,"Stargazer","Bandage","Dustworks",36,5,12,TRUE
-380,"Hexblade","Bandage","Fissure",45,3,38,TRUE
-381,"Griefer","Vigor Flask","Scald",46,3,26,TRUE
-382,"Evincer","Smoke Screen","Sunken",50,4,27,TRUE
-383,"Dancer","Echo Bolt","Crystal",19,2,28,TRUE
-384,"Artillery","Echo Bolt","Crystal",7,5,23,TRUE
-385,"Spectre","Accelerator","Sunken",1,0,16,TRUE
-386,"Alchemist","Vigor Flask","Polaris",41,3,7,TRUE
-387,"Stargazer","Spring Plume","Crystal",24,1,24,TRUE
-388,"Spectre","Spring Plume","Deepgrove",15,5,23,TRUE
-389,"Stargazer","Nox Bomb","Graphite",11,4,1,TRUE
-390,"Ranger","Echo Bolt","Fissure",48,2,20,TRUE
-391,"Skirmisher","Nox Bomb","Graphite",30,5,37,TRUE
-392,"Champion","Vigor Flask","Fissure",30,0,28,TRUE
-393,"Griefer","Nox Bomb","Scald",32,0,30,TRUE
-394,"Alchemist","Echo Bolt","Deepgrove",2,0,38,TRUE
-395,"Champion","Risk-it-Biscuit","Crystal",27,0,1,TRUE
-396,"Spectre","Risk-it-Biscuit","Bogpit",3,4,19,TRUE
-397,"Spectre","Flame Trap","Scald",15,4,10,TRUE
-398,"Battlesmith","Echo Bolt","Scald",36,2,13,TRUE
-399,"Dancer","Smoke Screen","Graphite",32,2,33,TRUE
-400,"Griefer","Flame Trap","Skullway",40,2,16,TRUE
-401,"Dancer","Echo Bolt","Polaris",10,3,14,TRUE
-402,"Dancer","Hedge Seed","Bogpit",49,4,20,TRUE
-403,"Vampire","Echo Bolt","Crystal",45,5,39,TRUE
-404,"Chronomancer","Vigor Flask","Crystal",40,1,4,TRUE
-405,"Stargazer","Flame Trap","Scald",4,4,27,TRUE
-406,"Evincer","Smoke Screen","Graphite",42,4,4,TRUE
-407,"Hexblade","Nox Bomb","Crystal",15,3,17,TRUE
-408,"Artillery","Lava Cake","Deepgrove",20,5,36,TRUE
-409,"Chronomancer","Smoke Screen","Bogpit",26,0,16,TRUE
-410,"Griefer","Flame Trap","Dustworks",42,3,6,TRUE
-411,"Alchemist","Spring Plume","Polaris",18,3,16,TRUE
-412,"Titan","Smoke Screen","Polaris",34,4,34,TRUE
-413,"Ranger","Spring Plume","Dustworks",46,1,28,TRUE
-414,"Cloudbreaker","Vigor Flask","Deepgrove",5,0,10,FALSE
-415,"Champion","Spring Plume","Deepgrove",37,4,10,TRUE
-416,"Stargazer","Accelerator","Skullway",19,4,3,TRUE
-417,"Battlesmith","Echo Bolt","Polaris",32,4,30,TRUE
-418,"Dancer","Flame Trap","Golden",29,1,29,TRUE
-419,"Stargazer","Accelerator","Crystal",18,5,22,TRUE
-420,"Vampire","Smoke Screen","Golden",14,1,36,TRUE
-421,"Spectre","Bandage","Golden",24,3,39,TRUE
-422,"Alchemist","Smoke Screen","Dustworks",20,4,29,TRUE
-423,"Artillery","Accelerator","Graphite",20,2,24,TRUE
-424,"Skirmisher","Echo Bolt","Golden",50,4,39,TRUE
-425,"Frost Knight","Flame Trap","Graphite",38,5,25,TRUE
-426,"Skirmisher","Risk-it-Biscuit","Scald",44,1,15,TRUE
-427,"Spectre","Echo Bolt","Deepgrove",23,0,7,TRUE
-428,"Vampire","Spring Plume","Scald",1,3,15,TRUE
-429,"Stargazer","Bandage","Golden",21,0,13,TRUE
-430,"Ranger","Echo Bolt","Polaris",33,3,18,TRUE
-431,"Ranger","Vigor Flask","Dustworks",16,4,4,TRUE
-432,"Stargazer","Risk-it-Biscuit","Skullway",36,0,33,TRUE
-433,"Ranger","Smoke Screen","Graphite",42,0,35,TRUE
-434,"Hexblade","Hedge Seed","Fissure",46,5,18,TRUE
-435,"Frost Knight","Hedge Seed","Skullway",40,2,22,TRUE
-436,"Griefer","Hedge Seed","Polaris",25,2,30,TRUE
-437,"Skirmisher","Smoke Screen","Dustworks",39,3,2,TRUE
-438,"Stargazer","Spring Plume","Dustworks",28,4,21,TRUE
-439,"Vampire","Accelerator","Skullway",10,5,21,TRUE
-440,"Ranger","Spring Plume","Bogpit",42,1,15,TRUE
-441,"Ranger","Spring Plume","Graphite",33,1,31,TRUE
-442,"Stargazer","Lava Cake","Scald",14,1,2,TRUE
-443,"Titan","Bandage","Fissure",19,5,37,TRUE
-444,"Frost Knight","Accelerator","Dustworks",24,4,5,TRUE
-445,"Hexblade","Hedge Seed","Sunken",27,2,26,TRUE
-446,"Titan","Echo Bolt","Dustworks",40,5,13,TRUE
-447,"Griefer","Risk-it-Biscuit","Crystal",32,4,25,TRUE
-448,"Frost Knight","Nox Bomb","Graphite",21,4,33,TRUE
-449,"Vampire","Lava Cake","Polaris",20,0,29,TRUE
-450,"Cloudbreaker","Spring Plume","Bogpit",46,3,4,TRUE
-451,"Griefer","Nox Bomb","Bogpit",40,2,13,TRUE
-452,"Hexblade","Bandage","Skullway",26,4,17,TRUE
-453,"Alchemist","Risk-it-Biscuit","Dustworks",3,2,5,TRUE
-454,"Stargazer","Bandage","Graphite",31,2,25,TRUE
-455,"Champion","Echo Bolt","Crystal",26,2,24,TRUE
-456,"Ranger","Risk-it-Biscuit","Polaris",23,4,14,TRUE
-457,"Stargazer","Smoke Screen","Graphite",21,1,35,TRUE
-458,"Griefer","Smoke Screen","Scald",7,0,18,FALSE
-459,"Frost Knight","Echo Bolt","Sunken",40,5,10,FALSE
-460,"Alchemist","Bandage","Skullway",47,3,39,TRUE
-461,"Vampire","Lava Cake","Sunken",26,5,8,TRUE
-462,"Artillery","Vigor Flask","Golden",50,3,16,TRUE
-463,"Chronomancer","Flame Trap","Dustworks",14,3,4,TRUE
-464,"Frost Knight","Nox Bomb","Skullway",46,4,38,TRUE
-465,"Battlesmith","Lava Cake","Dustworks",8,0,22,TRUE
-466,"Griefer","Bandage","Skullway",37,2,5,TRUE
-467,"Skirmisher","Hedge Seed","Golden",43,0,38,TRUE
-468,"Dancer","Echo Bolt","Fissure",24,4,2,TRUE
-469,"Ranger","Smoke Screen","Skullway",13,5,30,TRUE
-470,"Champion","Accelerator","Sunken",44,2,25,TRUE
-471,"Chronomancer","Hedge Seed","Skullway",7,2,21,TRUE
-472,"Chronomancer","Nox Bomb","Golden",13,2,30,TRUE
-473,"Titan","Hedge Seed","Scald",16,2,16,TRUE
-474,"Stargazer","Vigor Flask","Sunken",31,3,16,TRUE
-475,"Skirmisher","Echo Bolt","Polaris",15,3,5,TRUE
-476,"Evincer","Flame Trap","Graphite",21,0,34,TRUE
-477,"Alchemist","Vigor Flask","Golden",5,5,30,TRUE
-478,"Cloudbreaker","Accelerator","Dustworks",7,1,36,TRUE
-479,"Battlesmith","Smoke Screen","Graphite",23,5,39,TRUE
-480,"Champion","Smoke Screen","Golden",30,2,2,TRUE
-481,"Hexblade","Flame Trap","Skullway",22,3,28,TRUE
-482,"Griefer","Spring Plume","Bogpit",30,2,6,TRUE
-483,"Spectre","Hedge Seed","Sunken",33,3,36,TRUE
-484,"Artillery","Smoke Screen","Fissure",11,3,29,TRUE
-485,"Alchemist","Vigor Flask","Skullway",41,0,17,TRUE
-486,"Hexblade","Bandage","Dustworks",26,2,22,TRUE
-487,"Cloudbreaker","Lava Cake","Crystal",28,0,33,TRUE
-488,"Battlesmith","Lava Cake","Fissure",24,2,7,TRUE
-489,"Skirmisher","Hedge Seed","Graphite",26,3,33,TRUE
-490,"Evincer","Echo Bolt","Bogpit",37,0,3,TRUE
-491,"Dancer","Flame Trap","Golden",24,5,7,TRUE
-492,"Ranger","Nox Bomb","Fissure",28,5,27,TRUE
-493,"Vampire","Lava Cake","Golden",16,2,35,TRUE
-494,"Ranger","Vigor Flask","Sunken",2,0,4,TRUE
-495,"Titan","Echo Bolt","Bogpit",41,4,3,TRUE
-496,"Frost Knight","Spring Plume","Fissure",40,0,19,TRUE
-497,"Cloudbreaker","Hedge Seed","Skullway",15,2,10,TRUE
-498,"Ranger","Vigor Flask","Crystal",9,2,14,TRUE
-499,"Spectre","Risk-it-Biscuit","Crystal",39,4,24,TRUE
-500,"Frost Knight","Echo Bolt","Crystal",44,4,37,TRUE
+"Index","Class","Trinket","Map","Game_ID","Kills","Coins","Complete","Lifetime"
+1,"Cloudbreaker","Hedge Seed","Sunken",26,2,21,TRUE,1322
+2,"Titan","Lava Cake","Golden",38,4,15,TRUE,1213
+3,"Chronomancer","Echo Bolt","Deepgrove",5,3,23,TRUE,1484
+4,"Alchemist","Vigor Flask","Crystal",49,0,20,TRUE,942
+5,"Champion","Lava Cake","Skullway",40,4,26,TRUE,1483
+6,"Frost Knight","Accelerator","Polaris",6,1,16,TRUE,1301
+7,"Alchemist","Flame Trap","Dustworks",12,2,15,TRUE,1785
+8,"Stargazer","Accelerator","Crystal",43,2,11,TRUE,1904
+9,"Ranger","Echo Bolt","Bogpit",15,2,4,TRUE,1135
+10,"Artillery","Echo Bolt","Skullway",23,3,25,TRUE,1674
+11,"Spectre","Nox Bomb","Sunken",29,2,16,TRUE,1082
+12,"Alchemist","Echo Bolt","Crystal",7,2,24,TRUE,339
+13,"Stargazer","Echo Bolt","Crystal",13,3,23,TRUE,1157
+14,"Cloudbreaker","Flame Trap","Polaris",31,2,13,TRUE,1143
+15,"Griefer","Bandage","Polaris",20,1,28,TRUE,1696
+16,"Dancer","Vigor Flask","Graphite",5,4,14,TRUE,1120
+17,"Artillery","Smoke Screen","Graphite",3,1,23,TRUE,1356
+18,"Chronomancer","Smoke Screen","Polaris",23,5,6,FALSE,731
+19,"Cloudbreaker","Echo Bolt","Bogpit",40,4,21,TRUE,1100
+20,"Hexblade","Hedge Seed","Golden",12,0,22,TRUE,849
+21,"Spectre","Nox Bomb","Polaris",42,4,19,TRUE,860
+22,"Frost Knight","Vigor Flask","Polaris",26,3,2,TRUE,1849
+23,"Alchemist","Bandage","Scald",48,0,19,FALSE,1279
+24,"Ranger","Risk-it-Biscuit","Dustworks",19,0,17,TRUE,1184
+25,"Stargazer","Risk-it-Biscuit","Scald",39,4,1,TRUE,1048
+26,"Skirmisher","Lava Cake","Scald",3,1,30,TRUE,1317
+27,"Stargazer","Bandage","Polaris",17,4,9,TRUE,715
+28,"Cloudbreaker","Risk-it-Biscuit","Deepgrove",21,3,3,TRUE,2041
+29,"Griefer","Smoke Screen","Skullway",28,5,8,FALSE,1492
+30,"Battlesmith","Echo Bolt","Scald",6,2,16,TRUE,885
+31,"Alchemist","Vigor Flask","Dustworks",23,2,6,TRUE,1288
+32,"Dancer","Smoke Screen","Dustworks",3,2,8,TRUE,918
+33,"Spectre","Hedge Seed","Polaris",34,1,6,TRUE,1342
+34,"Champion","Accelerator","Polaris",35,1,7,TRUE,1476
+35,"Frost Knight","Spring Plume","Golden",25,5,20,TRUE,947
+36,"Cloudbreaker","Accelerator","Bogpit",17,2,14,TRUE,1282
+37,"Spectre","Lava Cake","Bogpit",11,2,16,TRUE,920
+38,"Frost Knight","Vigor Flask","Dustworks",19,2,17,TRUE,1061
+39,"Stargazer","Nox Bomb","Crystal",25,1,24,TRUE,1311
+40,"Hexblade","Risk-it-Biscuit","Skullway",12,0,37,TRUE,1933
+41,"Alchemist","Flame Trap","Dustworks",19,5,40,TRUE,1467
+42,"Skirmisher","Accelerator","Polaris",9,5,3,TRUE,833
+43,"Skirmisher","Nox Bomb","Fissure",24,3,10,TRUE,985
+44,"Cloudbreaker","Vigor Flask","Crystal",50,5,26,TRUE,1016
+45,"Stargazer","Accelerator","Graphite",32,5,30,TRUE,1293
+46,"Skirmisher","Smoke Screen","Fissure",33,3,22,TRUE,988
+47,"Battlesmith","Nox Bomb","Crystal",48,1,40,TRUE,1668
+48,"Artillery","Spring Plume","Deepgrove",14,5,36,TRUE,1245
+49,"Hexblade","Echo Bolt","Graphite",30,5,25,TRUE,1340
+50,"Battlesmith","Hedge Seed","Golden",32,0,12,TRUE,1169
+51,"Ranger","Risk-it-Biscuit","Skullway",12,5,34,TRUE,1381
+52,"Champion","Risk-it-Biscuit","Sunken",24,2,23,TRUE,1036
+53,"Chronomancer","Accelerator","Crystal",17,4,14,TRUE,1169
+54,"Evincer","Vigor Flask","Sunken",30,0,21,TRUE,1139
+55,"Evincer","Echo Bolt","Dustworks",44,0,20,TRUE,1419
+56,"Frost Knight","Accelerator","Dustworks",20,5,15,TRUE,828
+57,"Artillery","Flame Trap","Crystal",8,2,8,TRUE,748
+58,"Dancer","Vigor Flask","Fissure",40,4,29,TRUE,1420
+59,"Artillery","Nox Bomb","Scald",31,2,34,TRUE,1022
+60,"Evincer","Accelerator","Bogpit",12,5,30,TRUE,288
+61,"Frost Knight","Hedge Seed","Golden",12,0,6,TRUE,1013
+62,"Battlesmith","Lava Cake","Golden",26,5,24,TRUE,1416
+63,"Chronomancer","Spring Plume","Dustworks",34,5,22,TRUE,1196
+64,"Cloudbreaker","Risk-it-Biscuit","Fissure",6,4,5,TRUE,1050
+65,"Champion","Accelerator","Graphite",4,3,1,TRUE,1337
+66,"Ranger","Nox Bomb","Fissure",3,3,24,TRUE,1410
+67,"Alchemist","Vigor Flask","Crystal",18,1,26,TRUE,2124
+68,"Ranger","Lava Cake","Bogpit",33,3,28,TRUE,1581
+69,"Griefer","Nox Bomb","Golden",48,2,34,TRUE,1216
+70,"Spectre","Lava Cake","Graphite",8,5,28,FALSE,1426
+71,"Evincer","Hedge Seed","Dustworks",16,1,36,TRUE,1163
+72,"Titan","Echo Bolt","Fissure",24,0,8,TRUE,818
+73,"Spectre","Smoke Screen","Polaris",7,5,33,TRUE,1013
+74,"Frost Knight","Flame Trap","Crystal",8,3,9,TRUE,1268
+75,"Artillery","Risk-it-Biscuit","Skullway",17,4,40,TRUE,1143
+76,"Vampire","Spring Plume","Polaris",39,1,29,TRUE,1753
+77,"Alchemist","Nox Bomb","Deepgrove",17,2,13,TRUE,1083
+78,"Champion","Echo Bolt","Golden",5,4,33,TRUE,933
+79,"Griefer","Accelerator","Graphite",26,4,27,TRUE,1106
+80,"Frost Knight","Bandage","Polaris",24,4,2,TRUE,1061
+81,"Chronomancer","Smoke Screen","Scald",37,4,25,TRUE,1154
+82,"Chronomancer","Hedge Seed","Golden",40,2,35,FALSE,1295
+83,"Evincer","Accelerator","Deepgrove",44,0,19,TRUE,560
+84,"Dancer","Smoke Screen","Fissure",21,2,5,TRUE,1362
+85,"Champion","Hedge Seed","Polaris",8,3,1,TRUE,899
+86,"Ranger","Risk-it-Biscuit","Graphite",6,1,19,TRUE,966
+87,"Vampire","Echo Bolt","Fissure",2,5,27,TRUE,485
+88,"Dancer","Lava Cake","Polaris",9,3,29,TRUE,1788
+89,"Frost Knight","Echo Bolt","Skullway",40,3,20,TRUE,725
+90,"Battlesmith","Risk-it-Biscuit","Fissure",50,0,3,TRUE,1610
+91,"Alchemist","Risk-it-Biscuit","Graphite",27,5,20,TRUE,1237
+92,"Spectre","Risk-it-Biscuit","Sunken",5,1,35,TRUE,970
+93,"Chronomancer","Spring Plume","Scald",19,4,26,TRUE,1227
+94,"Stargazer","Echo Bolt","Crystal",43,1,39,TRUE,2057
+95,"Spectre","Flame Trap","Deepgrove",9,4,35,TRUE,1307
+96,"Griefer","Lava Cake","Fissure",27,1,37,TRUE,1793
+97,"Spectre","Echo Bolt","Polaris",13,4,28,TRUE,1296
+98,"Titan","Risk-it-Biscuit","Crystal",36,5,31,TRUE,1326
+99,"Champion","Lava Cake","Sunken",3,2,36,TRUE,954
+100,"Griefer","Risk-it-Biscuit","Graphite",28,1,6,TRUE,1540
+101,"Griefer","Accelerator","Bogpit",3,4,4,TRUE,2162
+102,"Chronomancer","Bandage","Fissure",20,0,7,TRUE,1346
+103,"Vampire","Hedge Seed","Bogpit",26,0,10,FALSE,718
+104,"Alchemist","Hedge Seed","Skullway",22,2,29,TRUE,257
+105,"Stargazer","Vigor Flask","Polaris",14,1,6,TRUE,587
+106,"Artillery","Vigor Flask","Bogpit",33,4,24,TRUE,1410
+107,"Ranger","Smoke Screen","Fissure",48,0,31,TRUE,1643
+108,"Vampire","Nox Bomb","Crystal",9,2,18,TRUE,914
+109,"Chronomancer","Flame Trap","Crystal",48,0,32,TRUE,1466
+110,"Skirmisher","Nox Bomb","Bogpit",46,5,1,TRUE,1297
+111,"Battlesmith","Smoke Screen","Graphite",19,0,30,TRUE,1217
+112,"Alchemist","Flame Trap","Crystal",2,4,2,TRUE,1848
+113,"Champion","Nox Bomb","Sunken",27,4,13,TRUE,949
+114,"Alchemist","Bandage","Bogpit",27,3,18,TRUE,1303
+115,"Skirmisher","Hedge Seed","Scald",38,0,17,TRUE,1541
+116,"Champion","Bandage","Skullway",8,1,30,TRUE,1464
+117,"Artillery","Spring Plume","Graphite",3,4,21,TRUE,1283
+118,"Frost Knight","Spring Plume","Dustworks",50,2,18,TRUE,832
+119,"Spectre","Hedge Seed","Deepgrove",7,4,8,TRUE,1000
+120,"Evincer","Risk-it-Biscuit","Deepgrove",39,2,23,TRUE,1174
+121,"Hexblade","Smoke Screen","Bogpit",28,5,37,TRUE,1720
+122,"Cloudbreaker","Echo Bolt","Golden",39,0,10,TRUE,1218
+123,"Skirmisher","Smoke Screen","Skullway",25,0,8,TRUE,1564
+124,"Titan","Hedge Seed","Graphite",10,4,37,TRUE,855
+125,"Titan","Smoke Screen","Skullway",38,5,21,TRUE,1322
+126,"Alchemist","Spring Plume","Sunken",49,4,40,TRUE,659
+127,"Champion","Accelerator","Deepgrove",18,5,40,TRUE,1480
+128,"Dancer","Lava Cake","Golden",2,3,8,TRUE,648
+129,"Battlesmith","Flame Trap","Dustworks",48,0,36,TRUE,1706
+130,"Artillery","Smoke Screen","Sunken",36,1,34,TRUE,2291
+131,"Ranger","Lava Cake","Polaris",25,5,3,TRUE,1270
+132,"Ranger","Nox Bomb","Scald",34,2,37,TRUE,1010
+133,"Titan","Flame Trap","Scald",38,1,14,TRUE,574
+134,"Frost Knight","Accelerator","Polaris",12,3,30,TRUE,1026
+135,"Dancer","Smoke Screen","Crystal",3,4,24,TRUE,753
+136,"Cloudbreaker","Spring Plume","Skullway",37,1,37,TRUE,2237
+137,"Hexblade","Risk-it-Biscuit","Crystal",45,1,14,FALSE,1584
+138,"Dancer","Smoke Screen","Skullway",25,5,14,TRUE,1977
+139,"Battlesmith","Flame Trap","Graphite",29,5,12,TRUE,719
+140,"Artillery","Vigor Flask","Golden",16,5,19,TRUE,1015
+141,"Griefer","Nox Bomb","Polaris",35,2,35,TRUE,1181
+142,"Frost Knight","Hedge Seed","Skullway",31,5,30,TRUE,1570
+143,"Champion","Bandage","Sunken",37,2,14,TRUE,797
+144,"Vampire","Flame Trap","Skullway",28,0,30,TRUE,1181
+145,"Griefer","Vigor Flask","Scald",28,4,12,FALSE,1305
+146,"Stargazer","Spring Plume","Graphite",18,0,13,TRUE,1185
+147,"Titan","Bandage","Polaris",33,0,18,TRUE,24
+148,"Cloudbreaker","Vigor Flask","Fissure",46,3,4,TRUE,1411
+149,"Battlesmith","Lava Cake","Scald",20,1,14,TRUE,1810
+150,"Titan","Flame Trap","Polaris",1,0,30,TRUE,1001
+151,"Griefer","Risk-it-Biscuit","Polaris",45,4,31,TRUE,1344
+152,"Battlesmith","Lava Cake","Skullway",3,5,23,TRUE,1163
+153,"Skirmisher","Accelerator","Polaris",36,0,31,TRUE,933
+154,"Hexblade","Nox Bomb","Golden",28,4,32,TRUE,964
+155,"Hexblade","Spring Plume","Skullway",45,5,10,TRUE,1376
+156,"Battlesmith","Vigor Flask","Dustworks",4,0,25,FALSE,885
+157,"Alchemist","Vigor Flask","Crystal",6,3,16,TRUE,1470
+158,"Hexblade","Lava Cake","Fissure",2,2,15,FALSE,1063
+159,"Artillery","Flame Trap","Crystal",50,5,8,TRUE,983
+160,"Alchemist","Risk-it-Biscuit","Skullway",3,4,13,TRUE,1210
+161,"Alchemist","Risk-it-Biscuit","Crystal",27,4,34,TRUE,1439
+162,"Titan","Echo Bolt","Sunken",38,1,40,TRUE,1134
+163,"Stargazer","Bandage","Polaris",26,0,35,TRUE,1021
+164,"Spectre","Spring Plume","Deepgrove",37,5,23,TRUE,2004
+165,"Dancer","Smoke Screen","Crystal",11,4,3,TRUE,1194
+166,"Dancer","Smoke Screen","Dustworks",10,5,23,FALSE,1343
+167,"Champion","Accelerator","Skullway",38,0,7,TRUE,1465
+168,"Dancer","Bandage","Skullway",34,1,27,FALSE,1335
+169,"Vampire","Bandage","Golden",11,1,37,TRUE,713
+170,"Dancer","Flame Trap","Sunken",25,1,22,TRUE,1096
+171,"Artillery","Accelerator","Deepgrove",15,2,21,TRUE,679
+172,"Skirmisher","Accelerator","Sunken",14,1,17,TRUE,996
+173,"Dancer","Flame Trap","Deepgrove",11,3,6,TRUE,1552
+174,"Battlesmith","Risk-it-Biscuit","Graphite",13,2,37,TRUE,1219
+175,"Dancer","Risk-it-Biscuit","Dustworks",40,5,6,TRUE,1832
+176,"Ranger","Smoke Screen","Bogpit",48,4,14,TRUE,510
+177,"Dancer","Vigor Flask","Graphite",12,0,33,TRUE,941
+178,"Cloudbreaker","Risk-it-Biscuit","Deepgrove",34,4,3,TRUE,1589
+179,"Titan","Spring Plume","Scald",33,4,26,TRUE,736
+180,"Artillery","Vigor Flask","Golden",10,0,17,TRUE,1193
+181,"Spectre","Hedge Seed","Scald",30,1,10,TRUE,1220
+182,"Skirmisher","Lava Cake","Deepgrove",45,2,24,TRUE,1267
+183,"Titan","Vigor Flask","Crystal",37,1,23,FALSE,2145
+184,"Spectre","Accelerator","Dustworks",28,3,33,TRUE,960
+185,"Titan","Bandage","Scald",19,0,20,TRUE,1465
+186,"Griefer","Lava Cake","Polaris",16,1,25,FALSE,787
+187,"Stargazer","Smoke Screen","Sunken",23,0,7,TRUE,725
+188,"Ranger","Smoke Screen","Sunken",20,2,38,TRUE,578
+189,"Ranger","Echo Bolt","Polaris",11,0,6,TRUE,690
+190,"Titan","Spring Plume","Polaris",46,2,9,TRUE,1530
+191,"Ranger","Smoke Screen","Polaris",39,5,14,TRUE,267
+192,"Alchemist","Risk-it-Biscuit","Deepgrove",7,0,32,TRUE,668
+193,"Battlesmith","Flame Trap","Dustworks",32,0,32,TRUE,1722
+194,"Vampire","Vigor Flask","Fissure",21,5,29,TRUE,1479
+195,"Champion","Spring Plume","Polaris",34,2,6,TRUE,913
+196,"Cloudbreaker","Hedge Seed","Sunken",20,0,39,TRUE,1038
+197,"Titan","Hedge Seed","Fissure",37,3,1,TRUE,1340
+198,"Griefer","Accelerator","Dustworks",4,5,30,TRUE,1383
+199,"Stargazer","Vigor Flask","Polaris",25,4,38,TRUE,317
+200,"Evincer","Flame Trap","Polaris",17,4,20,TRUE,1973
+201,"Hexblade","Smoke Screen","Graphite",22,4,4,TRUE,1382
+202,"Griefer","Hedge Seed","Deepgrove",50,4,29,TRUE,1187
+203,"Evincer","Echo Bolt","Polaris",2,1,1,TRUE,1718
+204,"Titan","Flame Trap","Skullway",40,2,18,TRUE,902
+205,"Ranger","Lava Cake","Crystal",9,3,35,TRUE,709
+206,"Cloudbreaker","Nox Bomb","Skullway",44,1,1,TRUE,1464
+207,"Alchemist","Echo Bolt","Polaris",1,1,28,TRUE,1081
+208,"Spectre","Flame Trap","Fissure",42,4,25,TRUE,1349
+209,"Vampire","Smoke Screen","Golden",31,5,34,TRUE,1260
+210,"Skirmisher","Spring Plume","Scald",18,3,7,TRUE,1629
+211,"Dancer","Risk-it-Biscuit","Sunken",21,3,18,TRUE,1342
+212,"Champion","Smoke Screen","Skullway",16,4,11,TRUE,2273
+213,"Champion","Hedge Seed","Skullway",48,4,30,TRUE,602
+214,"Spectre","Hedge Seed","Fissure",5,0,38,TRUE,976
+215,"Frost Knight","Bandage","Scald",25,4,17,TRUE,1635
+216,"Evincer","Smoke Screen","Dustworks",44,2,8,TRUE,2033
+217,"Skirmisher","Hedge Seed","Scald",7,2,19,TRUE,789
+218,"Dancer","Lava Cake","Graphite",22,1,9,TRUE,1377
+219,"Skirmisher","Smoke Screen","Dustworks",12,0,1,TRUE,1452
+220,"Griefer","Lava Cake","Graphite",43,0,21,TRUE,1302
+221,"Alchemist","Nox Bomb","Golden",15,4,2,TRUE,2146
+222,"Ranger","Spring Plume","Skullway",41,5,5,TRUE,845
+223,"Vampire","Flame Trap","Skullway",10,2,13,TRUE,1833
+224,"Artillery","Spring Plume","Fissure",39,5,11,TRUE,1190
+225,"Champion","Smoke Screen","Deepgrove",8,2,34,TRUE,849
+226,"Griefer","Spring Plume","Sunken",32,0,21,TRUE,1517
+227,"Skirmisher","Echo Bolt","Skullway",4,0,9,TRUE,1249
+228,"Hexblade","Risk-it-Biscuit","Scald",21,2,26,TRUE,769
+229,"Vampire","Flame Trap","Sunken",44,3,25,TRUE,621
+230,"Stargazer","Nox Bomb","Golden",1,2,29,TRUE,1550
+231,"Hexblade","Vigor Flask","Graphite",15,0,2,TRUE,541
+232,"Vampire","Smoke Screen","Skullway",43,0,37,TRUE,1269
+233,"Stargazer","Flame Trap","Crystal",37,1,25,TRUE,1036
+234,"Evincer","Smoke Screen","Scald",30,1,40,TRUE,1449
+235,"Battlesmith","Hedge Seed","Deepgrove",15,5,19,TRUE,1027
+236,"Frost Knight","Risk-it-Biscuit","Graphite",23,2,10,TRUE,730
+237,"Skirmisher","Vigor Flask","Golden",46,1,4,TRUE,1156
+238,"Cloudbreaker","Risk-it-Biscuit","Graphite",34,2,40,TRUE,1263
+239,"Evincer","Echo Bolt","Fissure",10,0,33,TRUE,1286
+240,"Titan","Lava Cake","Deepgrove",24,4,3,TRUE,1727
+241,"Alchemist","Flame Trap","Bogpit",21,0,32,TRUE,896
+242,"Spectre","Smoke Screen","Crystal",48,3,9,TRUE,1413
+243,"Vampire","Hedge Seed","Graphite",23,4,20,TRUE,1572
+244,"Titan","Lava Cake","Golden",2,5,27,TRUE,1884
+245,"Spectre","Flame Trap","Deepgrove",11,0,26,TRUE,1308
+246,"Frost Knight","Spring Plume","Scald",22,2,10,TRUE,436
+247,"Cloudbreaker","Hedge Seed","Fissure",40,5,27,TRUE,490
+248,"Evincer","Accelerator","Crystal",3,1,32,TRUE,1530
+249,"Stargazer","Echo Bolt","Fissure",46,4,38,TRUE,1118
+250,"Evincer","Smoke Screen","Dustworks",45,3,35,TRUE,1193
+251,"Cloudbreaker","Bandage","Graphite",47,4,21,TRUE,935
+252,"Chronomancer","Bandage","Graphite",41,4,12,TRUE,705
+253,"Ranger","Risk-it-Biscuit","Skullway",5,3,40,TRUE,1091
+254,"Evincer","Nox Bomb","Dustworks",47,4,19,TRUE,892
+255,"Spectre","Vigor Flask","Bogpit",45,0,13,TRUE,1938
+256,"Skirmisher","Echo Bolt","Bogpit",43,2,23,TRUE,1295
+257,"Griefer","Accelerator","Dustworks",50,5,14,TRUE,910
+258,"Vampire","Smoke Screen","Polaris",22,1,25,TRUE,1983
+259,"Frost Knight","Lava Cake","Skullway",49,2,30,TRUE,1052
+260,"Hexblade","Smoke Screen","Polaris",4,3,27,TRUE,1045
+261,"Spectre","Nox Bomb","Deepgrove",25,2,35,TRUE,1539
+262,"Vampire","Smoke Screen","Polaris",28,0,16,TRUE,1639
+263,"Frost Knight","Accelerator","Bogpit",30,2,5,FALSE,843
+264,"Battlesmith","Hedge Seed","Crystal",39,3,2,TRUE,1340
+265,"Spectre","Flame Trap","Deepgrove",43,0,32,TRUE,1981
+266,"Champion","Hedge Seed","Golden",17,1,36,TRUE,1273
+267,"Stargazer","Spring Plume","Scald",30,5,34,TRUE,966
+268,"Hexblade","Echo Bolt","Deepgrove",43,1,24,TRUE,1439
+269,"Titan","Risk-it-Biscuit","Fissure",12,2,34,TRUE,875
+270,"Ranger","Lava Cake","Scald",30,5,15,TRUE,1522
+271,"Champion","Lava Cake","Bogpit",48,1,24,TRUE,1395
+272,"Champion","Spring Plume","Crystal",4,3,21,TRUE,678
+273,"Hexblade","Flame Trap","Dustworks",33,0,18,TRUE,1713
+274,"Ranger","Accelerator","Crystal",15,2,14,TRUE,1439
+275,"Cloudbreaker","Vigor Flask","Sunken",9,0,21,TRUE,905
+276,"Evincer","Vigor Flask","Bogpit",22,2,40,TRUE,1411
+277,"Titan","Echo Bolt","Polaris",24,3,26,TRUE,805
+278,"Champion","Risk-it-Biscuit","Sunken",48,0,6,TRUE,1629
+279,"Vampire","Nox Bomb","Deepgrove",42,4,8,TRUE,937
+280,"Artillery","Risk-it-Biscuit","Dustworks",9,4,18,TRUE,1100
+281,"Artillery","Lava Cake","Polaris",31,3,19,TRUE,1287
+282,"Frost Knight","Accelerator","Sunken",19,2,12,TRUE,812
+283,"Skirmisher","Lava Cake","Scald",41,3,4,TRUE,641
+284,"Frost Knight","Flame Trap","Dustworks",29,2,9,TRUE,600
+285,"Titan","Hedge Seed","Crystal",22,1,35,TRUE,1985
+286,"Hexblade","Nox Bomb","Dustworks",26,4,33,TRUE,1952
+287,"Ranger","Spring Plume","Polaris",39,4,35,FALSE,214
+288,"Stargazer","Lava Cake","Fissure",49,1,33,TRUE,1119
+289,"Vampire","Spring Plume","Sunken",11,2,37,TRUE,1422
+290,"Champion","Risk-it-Biscuit","Scald",21,3,24,FALSE,961
+291,"Griefer","Bandage","Sunken",41,0,12,TRUE,905
+292,"Frost Knight","Accelerator","Deepgrove",2,5,8,TRUE,993
+293,"Skirmisher","Accelerator","Crystal",43,5,35,TRUE,1376
+294,"Spectre","Risk-it-Biscuit","Deepgrove",40,4,19,TRUE,1228
+295,"Chronomancer","Bandage","Graphite",38,2,13,TRUE,1481
+296,"Cloudbreaker","Accelerator","Fissure",23,2,19,TRUE,1660
+297,"Alchemist","Risk-it-Biscuit","Bogpit",31,4,20,TRUE,1048
+298,"Chronomancer","Nox Bomb","Bogpit",15,5,16,TRUE,1218
+299,"Vampire","Vigor Flask","Graphite",15,5,27,TRUE,1769
+300,"Hexblade","Bandage","Crystal",50,1,31,TRUE,1005
+301,"Titan","Echo Bolt","Crystal",21,2,37,TRUE,741
+302,"Griefer","Flame Trap","Bogpit",40,0,36,TRUE,1609
+303,"Stargazer","Echo Bolt","Golden",16,1,1,FALSE,1349
+304,"Champion","Echo Bolt","Bogpit",39,4,11,TRUE,1070
+305,"Cloudbreaker","Smoke Screen","Dustworks",11,3,2,TRUE,1206
+306,"Dancer","Risk-it-Biscuit","Bogpit",26,1,38,TRUE,892
+307,"Vampire","Lava Cake","Golden",7,1,16,TRUE,1824
+308,"Spectre","Echo Bolt","Deepgrove",33,4,19,TRUE,1446
+309,"Vampire","Accelerator","Skullway",20,1,16,TRUE,1527
+310,"Dancer","Risk-it-Biscuit","Golden",7,5,38,TRUE,745
+311,"Spectre","Nox Bomb","Deepgrove",45,3,17,TRUE,809
+312,"Alchemist","Flame Trap","Deepgrove",32,0,13,TRUE,1036
+313,"Chronomancer","Echo Bolt","Deepgrove",18,1,39,TRUE,1140
+314,"Stargazer","Vigor Flask","Sunken",19,0,35,TRUE,1333
+315,"Vampire","Echo Bolt","Golden",6,5,9,TRUE,394
+316,"Stargazer","Echo Bolt","Dustworks",29,1,35,TRUE,1418
+317,"Frost Knight","Spring Plume","Deepgrove",29,2,7,TRUE,1300
+318,"Dancer","Spring Plume","Graphite",11,3,24,TRUE,765
+319,"Titan","Nox Bomb","Sunken",46,5,35,TRUE,1078
+320,"Frost Knight","Bandage","Skullway",43,3,2,TRUE,1157
+321,"Titan","Lava Cake","Deepgrove",31,3,40,FALSE,1499
+322,"Dancer","Bandage","Polaris",14,1,17,TRUE,1153
+323,"Artillery","Accelerator","Deepgrove",43,3,16,TRUE,1351
+324,"Champion","Flame Trap","Polaris",42,0,10,TRUE,906
+325,"Battlesmith","Flame Trap","Skullway",45,4,8,TRUE,1203
+326,"Spectre","Smoke Screen","Bogpit",3,3,25,TRUE,1153
+327,"Frost Knight","Risk-it-Biscuit","Dustworks",33,1,11,TRUE,1411
+328,"Skirmisher","Hedge Seed","Deepgrove",31,5,10,TRUE,957
+329,"Champion","Flame Trap","Crystal",38,3,5,TRUE,1046
+330,"Evincer","Bandage","Polaris",29,4,27,TRUE,759
+331,"Griefer","Bandage","Dustworks",28,5,39,TRUE,1850
+332,"Frost Knight","Nox Bomb","Deepgrove",10,2,30,TRUE,922
+333,"Battlesmith","Echo Bolt","Skullway",26,4,37,TRUE,1600
+334,"Champion","Bandage","Sunken",49,2,13,TRUE,842
+335,"Ranger","Nox Bomb","Bogpit",29,1,38,TRUE,307
+336,"Frost Knight","Echo Bolt","Sunken",6,0,1,TRUE,1749
+337,"Champion","Smoke Screen","Golden",26,3,6,FALSE,1000
+338,"Evincer","Smoke Screen","Golden",8,2,18,TRUE,1062
+339,"Frost Knight","Spring Plume","Graphite",25,4,36,TRUE,1711
+340,"Hexblade","Hedge Seed","Crystal",19,4,21,FALSE,1641
+341,"Frost Knight","Spring Plume","Bogpit",2,5,7,TRUE,1309
+342,"Griefer","Echo Bolt","Deepgrove",18,1,40,TRUE,1191
+343,"Alchemist","Echo Bolt","Sunken",50,0,18,TRUE,645
+344,"Battlesmith","Smoke Screen","Graphite",13,4,7,TRUE,738
+345,"Evincer","Risk-it-Biscuit","Sunken",4,1,18,TRUE,542
+346,"Cloudbreaker","Vigor Flask","Dustworks",24,1,9,TRUE,769
+347,"Evincer","Risk-it-Biscuit","Golden",50,0,37,TRUE,1317
+348,"Alchemist","Nox Bomb","Graphite",6,1,27,TRUE,1615
+349,"Battlesmith","Spring Plume","Sunken",26,0,37,TRUE,744
+350,"Stargazer","Nox Bomb","Scald",8,1,3,TRUE,806
+351,"Evincer","Nox Bomb","Dustworks",3,3,7,TRUE,1213
+352,"Ranger","Flame Trap","Crystal",48,0,20,TRUE,1207
+353,"Skirmisher","Nox Bomb","Bogpit",44,5,40,TRUE,1719
+354,"Artillery","Hedge Seed","Graphite",12,0,27,TRUE,988
+355,"Champion","Nox Bomb","Crystal",26,2,8,TRUE,1112
+356,"Alchemist","Flame Trap","Deepgrove",17,5,3,TRUE,582
+357,"Champion","Lava Cake","Polaris",34,5,9,TRUE,1544
+358,"Griefer","Nox Bomb","Sunken",39,3,31,TRUE,1080
+359,"Spectre","Nox Bomb","Dustworks",15,0,20,TRUE,1548
+360,"Vampire","Flame Trap","Crystal",25,5,27,TRUE,2165
+361,"Alchemist","Smoke Screen","Dustworks",46,0,1,TRUE,942
+362,"Hexblade","Accelerator","Dustworks",28,1,40,TRUE,1477
+363,"Spectre","Vigor Flask","Skullway",26,2,11,TRUE,1154
+364,"Dancer","Flame Trap","Graphite",10,1,24,FALSE,1908
+365,"Cloudbreaker","Vigor Flask","Fissure",1,2,16,TRUE,1461
+366,"Skirmisher","Hedge Seed","Graphite",47,4,31,TRUE,1632
+367,"Champion","Bandage","Deepgrove",28,3,1,TRUE,684
+368,"Skirmisher","Bandage","Scald",9,5,32,TRUE,875
+369,"Stargazer","Nox Bomb","Fissure",48,2,10,TRUE,1813
+370,"Ranger","Risk-it-Biscuit","Fissure",6,5,22,TRUE,533
+371,"Alchemist","Spring Plume","Sunken",15,4,29,TRUE,678
+372,"Artillery","Spring Plume","Dustworks",3,0,4,TRUE,1137
+373,"Ranger","Nox Bomb","Sunken",23,2,26,TRUE,982
+374,"Artillery","Accelerator","Golden",27,2,33,TRUE,1282
+375,"Chronomancer","Risk-it-Biscuit","Scald",49,4,5,TRUE,560
+376,"Cloudbreaker","Flame Trap","Sunken",28,3,11,TRUE,581
+377,"Champion","Bandage","Deepgrove",19,1,34,TRUE,1307
+378,"Cloudbreaker","Spring Plume","Bogpit",10,2,29,TRUE,1973
+379,"Alchemist","Lava Cake","Bogpit",10,0,6,TRUE,1208
+380,"Spectre","Vigor Flask","Scald",6,0,26,TRUE,1250
+381,"Alchemist","Lava Cake","Graphite",11,2,21,TRUE,2036
+382,"Alchemist","Smoke Screen","Deepgrove",9,1,30,TRUE,1677
+383,"Vampire","Nox Bomb","Golden",36,5,16,TRUE,1232
+384,"Dancer","Bandage","Sunken",15,5,31,TRUE,717
+385,"Cloudbreaker","Vigor Flask","Sunken",48,2,6,TRUE,1895
+386,"Hexblade","Risk-it-Biscuit","Sunken",42,0,11,TRUE,1052
+387,"Vampire","Bandage","Golden",9,4,13,TRUE,1049
+388,"Evincer","Spring Plume","Bogpit",1,3,31,FALSE,1557
+389,"Evincer","Spring Plume","Deepgrove",30,3,17,TRUE,986
+390,"Spectre","Smoke Screen","Skullway",36,4,15,TRUE,1594
+391,"Skirmisher","Smoke Screen","Graphite",12,3,15,TRUE,730
+392,"Chronomancer","Hedge Seed","Dustworks",31,1,32,TRUE,861
+393,"Champion","Vigor Flask","Dustworks",9,3,28,TRUE,1735
+394,"Chronomancer","Spring Plume","Crystal",41,4,11,TRUE,831
+395,"Ranger","Hedge Seed","Scald",33,5,22,TRUE,1605
+396,"Spectre","Hedge Seed","Scald",29,0,23,TRUE,1419
+397,"Hexblade","Hedge Seed","Crystal",50,4,14,TRUE,1853
+398,"Battlesmith","Flame Trap","Sunken",30,5,34,TRUE,1071
+399,"Battlesmith","Bandage","Graphite",20,3,40,TRUE,1588
+400,"Skirmisher","Flame Trap","Polaris",13,1,24,TRUE,1425
+401,"Vampire","Spring Plume","Dustworks",38,0,15,TRUE,1879
+402,"Cloudbreaker","Nox Bomb","Skullway",32,0,38,TRUE,1511
+403,"Chronomancer","Accelerator","Graphite",39,1,25,TRUE,1164
+404,"Stargazer","Vigor Flask","Fissure",29,4,17,TRUE,1036
+405,"Artillery","Nox Bomb","Graphite",45,2,23,TRUE,1472
+406,"Chronomancer","Lava Cake","Sunken",3,2,40,TRUE,1083
+407,"Cloudbreaker","Echo Bolt","Scald",42,5,21,TRUE,727
+408,"Battlesmith","Flame Trap","Graphite",27,0,36,TRUE,1357
+409,"Spectre","Vigor Flask","Fissure",3,5,9,TRUE,1171
+410,"Alchemist","Lava Cake","Deepgrove",9,1,13,TRUE,1270
+411,"Dancer","Hedge Seed","Skullway",41,0,6,TRUE,1440
+412,"Frost Knight","Echo Bolt","Crystal",37,4,38,TRUE,1686
+413,"Vampire","Smoke Screen","Dustworks",2,2,29,TRUE,655
+414,"Dancer","Smoke Screen","Deepgrove",21,0,30,TRUE,1016
+415,"Stargazer","Vigor Flask","Polaris",26,5,36,TRUE,841
+416,"Frost Knight","Nox Bomb","Dustworks",32,2,21,TRUE,1710
+417,"Dancer","Hedge Seed","Dustworks",24,1,34,TRUE,1461
+418,"Frost Knight","Vigor Flask","Polaris",12,2,3,TRUE,1051
+419,"Hexblade","Lava Cake","Fissure",14,0,13,TRUE,1278
+420,"Ranger","Accelerator","Polaris",44,1,33,TRUE,1142
+421,"Spectre","Echo Bolt","Bogpit",18,5,12,TRUE,735
+422,"Ranger","Flame Trap","Graphite",4,0,30,TRUE,1830
+423,"Frost Knight","Flame Trap","Bogpit",22,3,4,TRUE,1317
+424,"Griefer","Smoke Screen","Crystal",21,5,27,TRUE,1104
+425,"Frost Knight","Flame Trap","Fissure",13,0,3,TRUE,1080
+426,"Champion","Echo Bolt","Fissure",15,1,21,TRUE,1252
+427,"Battlesmith","Nox Bomb","Fissure",38,2,6,TRUE,548
+428,"Champion","Risk-it-Biscuit","Golden",25,3,24,TRUE,1513
+429,"Battlesmith","Echo Bolt","Fissure",30,1,8,TRUE,1368
+430,"Spectre","Flame Trap","Fissure",4,4,25,TRUE,1860
+431,"Frost Knight","Hedge Seed","Dustworks",20,1,10,TRUE,626
+432,"Evincer","Bandage","Fissure",49,2,27,TRUE,1763
+433,"Vampire","Smoke Screen","Skullway",31,0,31,TRUE,2261
+434,"Frost Knight","Lava Cake","Dustworks",35,5,10,TRUE,1850
+435,"Titan","Risk-it-Biscuit","Fissure",26,3,39,TRUE,1069
+436,"Chronomancer","Smoke Screen","Bogpit",46,2,9,TRUE,836
+437,"Chronomancer","Flame Trap","Sunken",20,3,12,TRUE,699
+438,"Spectre","Lava Cake","Fissure",13,2,24,TRUE,1851
+439,"Artillery","Hedge Seed","Skullway",25,1,26,TRUE,789
+440,"Chronomancer","Flame Trap","Polaris",4,5,12,TRUE,700
+441,"Titan","Flame Trap","Scald",21,1,28,TRUE,963
+442,"Evincer","Hedge Seed","Graphite",34,1,31,TRUE,1372
+443,"Titan","Nox Bomb","Fissure",5,3,37,TRUE,802
+444,"Griefer","Flame Trap","Polaris",12,1,22,TRUE,1740
+445,"Battlesmith","Hedge Seed","Skullway",25,1,40,TRUE,982
+446,"Spectre","Vigor Flask","Sunken",40,3,20,TRUE,1046
+447,"Alchemist","Accelerator","Dustworks",4,0,30,TRUE,1413
+448,"Griefer","Flame Trap","Graphite",8,2,15,TRUE,1737
+449,"Spectre","Flame Trap","Scald",49,2,21,TRUE,2310
+450,"Alchemist","Spring Plume","Bogpit",35,5,5,TRUE,1823
+451,"Cloudbreaker","Accelerator","Fissure",44,1,40,TRUE,1246
+452,"Spectre","Nox Bomb","Golden",50,5,40,TRUE,568
+453,"Evincer","Accelerator","Golden",35,3,4,FALSE,1678
+454,"Vampire","Accelerator","Bogpit",17,5,3,TRUE,1549
+455,"Evincer","Smoke Screen","Skullway",26,4,23,TRUE,1220
+456,"Champion","Smoke Screen","Crystal",9,0,36,TRUE,990
+457,"Chronomancer","Flame Trap","Fissure",7,5,34,TRUE,1020
+458,"Artillery","Spring Plume","Polaris",28,4,20,TRUE,1540
+459,"Stargazer","Flame Trap","Graphite",14,5,40,TRUE,1255
+460,"Skirmisher","Smoke Screen","Sunken",26,2,27,TRUE,1554
+461,"Cloudbreaker","Bandage","Dustworks",29,3,36,TRUE,268
+462,"Griefer","Hedge Seed","Fissure",4,2,12,FALSE,730
+463,"Griefer","Accelerator","Sunken",44,4,32,TRUE,1052
+464,"Griefer","Echo Bolt","Golden",41,2,19,TRUE,883
+465,"Spectre","Accelerator","Polaris",23,1,21,TRUE,535
+466,"Griefer","Risk-it-Biscuit","Graphite",23,0,6,TRUE,1308
+467,"Titan","Hedge Seed","Scald",14,0,23,TRUE,554
+468,"Vampire","Accelerator","Deepgrove",33,3,29,TRUE,1253
+469,"Alchemist","Spring Plume","Scald",14,3,28,TRUE,1212
+470,"Alchemist","Nox Bomb","Dustworks",45,4,2,TRUE,874
+471,"Skirmisher","Vigor Flask","Scald",9,1,9,TRUE,1749
+472,"Champion","Vigor Flask","Sunken",14,2,16,TRUE,1106
+473,"Cloudbreaker","Smoke Screen","Graphite",43,1,9,TRUE,877
+474,"Stargazer","Nox Bomb","Skullway",14,5,38,TRUE,392
+475,"Cloudbreaker","Flame Trap","Polaris",50,0,34,TRUE,1288
+476,"Frost Knight","Echo Bolt","Fissure",15,4,21,TRUE,725
+477,"Champion","Lava Cake","Skullway",24,2,32,TRUE,1183
+478,"Skirmisher","Smoke Screen","Bogpit",48,4,11,TRUE,1941
+479,"Skirmisher","Nox Bomb","Golden",33,2,28,TRUE,1607
+480,"Spectre","Accelerator","Fissure",50,3,31,TRUE,1852
+481,"Griefer","Nox Bomb","Skullway",23,1,2,TRUE,1027
+482,"Chronomancer","Risk-it-Biscuit","Graphite",32,3,12,TRUE,1294
+483,"Vampire","Lava Cake","Fissure",49,4,29,TRUE,1696
+484,"Spectre","Nox Bomb","Dustworks",17,0,22,TRUE,438
+485,"Alchemist","Hedge Seed","Golden",14,5,16,TRUE,1607
+486,"Evincer","Lava Cake","Bogpit",41,0,22,TRUE,1622
+487,"Spectre","Bandage","Deepgrove",18,5,7,TRUE,714
+488,"Hexblade","Lava Cake","Dustworks",17,3,2,TRUE,1461
+489,"Griefer","Vigor Flask","Bogpit",29,2,31,TRUE,1514
+490,"Frost Knight","Bandage","Scald",43,1,9,TRUE,1005
+491,"Dancer","Flame Trap","Graphite",32,3,19,TRUE,1034
+492,"Alchemist","Bandage","Skullway",48,3,26,TRUE,1052
+493,"Vampire","Lava Cake","Sunken",11,1,33,FALSE,1054
+494,"Griefer","Accelerator","Bogpit",15,4,13,TRUE,1405
+495,"Vampire","Vigor Flask","Polaris",36,4,9,TRUE,1029
+496,"Battlesmith","Echo Bolt","Deepgrove",29,0,38,TRUE,912
+497,"Spectre","Risk-it-Biscuit","Deepgrove",36,5,18,TRUE,777
+498,"Dancer","Flame Trap","Deepgrove",12,2,22,FALSE,1258
+499,"Vampire","Flame Trap","Polaris",42,2,27,TRUE,1261
+500,"Battlesmith","Risk-it-Biscuit","Skullway",11,5,12,TRUE,1073

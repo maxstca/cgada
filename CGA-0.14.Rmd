@@ -1,0 +1,446 @@
+---
+title: "Cash Grab Arena -- Playtest Data Analysis"
+author: "Versions 0.14.*"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_collapsed: true
+    toc_depth: 3
+    number_sections: false
+    theme: lumen
+---
+
+```{css, echo=FALSE}
+  body .main-container {
+    max-width: 1280px !important;
+    width: 1280px !important;
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+  body {
+    max-width: 1280px !important;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1.25);
+    transform-origin: top center;
+  }
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+
+# Load in relevant packages
+library(ggplot2)
+library(glue)
+library(purrr)
+library(tidyverse)
+library(ggforce)
+library(ggthemes)
+library(ggrepel)
+
+#Write functions to append the data more efficiently.
+read_in_data <- function(fileName, playtestDate = "99/99/9999", playtestVersion = "0.0.*", hasHeaders = FALSE) {
+  out <- read.csv(fileName, hasHeaders)
+  colnames(out) <- c("ID", "Class", "Trinket", "Map", "Game_ID", "Kills", "Coins", "Is_Complete", "Lifetime")
+  out <- out |>
+    mutate(Date = playtestDate,
+           Version = playtestVersion,
+           Lifetime = Lifetime / 20)
+  return(out)
+}
+
+merge_playtests <- function(dataframes) {
+  out <- dataframes[[1]]
+  
+  if (length(dataframes) == 1) {
+    return(out)
+  }
+  
+  for (i in 2:length(dataframes)) {
+    dataframes[[i]]$Game_ID <- dataframes[[i]]$Game_ID + max(dataframes[[i - 1]]$Game_ID)
+    dataframes[[i]]$ID <- dataframes[[i]]$ID + max(dataframes[[i - 1]]$ID)
+    out <- rbind(out, dataframes[[i]])
+  }
+  
+  return(out)
+}
+
+generate_seqID <- function(x) {
+  
+  x |>
+    mutate(ID = ID + 1) |>
+    group_by(Game_ID) |>
+    mutate(seqID = 1:n()) |>
+    ungroup()
+  
+}
+
+theme_set(theme_clean()) #Set a default plot theme
+```
+
+```{r echo=FALSE}
+# Read in data
+setwd("data")
+entries1 <- read_in_data(fileName = "v0_14_1_d01_04_2026.csv", playtestDate = "01/04/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+
+#Merge obs. into one set of data
+dflist <- list(entries1)
+cgada <- merge_playtests(dflist)
+cgada <- generate_seqID(cgada) |>
+  filter(Is_Complete == TRUE)
+```
+
+## Introduction and Notes
+
+The following data is recorded under the following parameters:
+
+- Time Limit: 15 minutes
+- Coin Goal: 100 coins
+
+A total of `r length(cgada$ID)` lives were played across `r length(dflist)` playtests. The total playtime (in active games) on this version of Cash Grab was `r round(sum(cgada$Lifetime) / 60 / 60, 2)` hours. Thank you to all who participated!
+
+## Class Data
+
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class, Date) |>
+  summarise(Pop = sum(Lifetime) / 60) |>
+  ungroup() |>
+  group_by(Class) |>
+  summarise(sd=sd(Pop),
+            PopTotal = sum(Pop)) |>
+  ggplot(aes(x = Class, y = PopTotal)) +
+  geom_bar(stat = "identity", color = "black", fill = "green") +
+  theme(legend.position = "none") +
+  xlab("Class") + ylab("Time Played (minutes)") +
+  labs(title = "Class Playtime",
+       caption = "Red line indicates expected popularity assuming classes are to be equally used.
+                  Error bars indicate values which we could likely observe if we repeated a sample of the same number of playtests.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = PopTotal - sd,
+                ymax = PopTotal + sd),
+                width = 0.5) +
+  geom_hline(yintercept = (sum(cgada$Lifetime) / 60) / nrow(distinct(cgada, Class)), color = "red")
+)
+```
+
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         sd = sd(Kills),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Class, y = KPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "slateblue") +
+  theme(legend.position = "none") +
+  xlab("Class") + ylab("Kills") +
+  labs(title = "Class Kills per Entry",
+       caption = "Red line indicates the average Kills per Entry across all classes.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = KPE - se,
+                ymax = KPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
+)
+```
+
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry),
+         sd = sd(Coins),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Class, y = CPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "gold") +
+  theme(legend.position = "none") +
+  xlab("Class") + ylab("Coins") +
+  labs(title = "Class Coins per Entry",
+       caption = "Red line indicates the average Coins per Entry across all classes.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = CPE - se,
+                ymax = CPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "red")
+)
+```
+
+[Return to top.](https://maxstca.github.io/cgada/CGA-0.13.1.html)
+
+## Trinket Data
+
+```{r echo=FALSE}
+
+suppressMessages(
+  cgada |>
+  group_by(Trinket, Date) |>
+  summarise(n=sum(Lifetime) / 60) |>
+  ungroup() |> group_by(Trinket) |>
+  summarise(sd = sd(n),
+            sum = sum(n)) |>
+  ggplot(aes(x = Trinket, y = sum)) +
+  geom_bar(stat = "identity", color = "black", fill = "orange") +
+  theme(legend.position = "none") +
+  xlab("Trinket") + ylab("Time Played (minutes)") +
+  labs(title = "Trinket Popularity",
+       caption = "Red line indicates expected popularity assuming classes are to be equally used.
+                  Error bars indicate values which we could likely observe if we repeated a sample of the same number of playtests.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = sum - sd,
+                ymax = sum + sd),
+                width = 0.5) +
+  geom_hline(yintercept = (sum(cgada$Lifetime) / 60) / nrow(distinct(cgada, Trinket)), color = "red")
+)
+```
+
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Trinket) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         sd = sd(Kills),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Trinket, y = KPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "royalblue") +
+  theme(legend.position = "none") +
+  xlab("Trinket") + ylab("Kills") +
+  labs(title = "Trinket Kills per Entry",
+       caption = "Red line indicates the average Kills per Entry across all trinkets.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = KPE - se,
+                ymax = KPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
+)
+```
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Trinket) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry),
+         sd = sd(Coins),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Trinket, y = CPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "gold3") +
+  theme(legend.position = "none") +
+  xlab("Trinket") + ylab("Coins") +
+  labs(title = "Trinket Coins per Entry",
+       caption = "Red line indicates the average Coins per Entry across all trinkets.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = CPE - se,
+                ymax = CPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "red")
+)
+```
+
+[Return to top.](https://maxstca.github.io/cgada/CGA-0.13.1.html)
+
+## Map Data
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         sd = sd(Kills),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Map, y = KPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "lavender") +
+  theme(legend.position = "none") +
+  xlab("Map") + ylab("Kills") +
+  labs(title = "Kills per Entry by Map",
+       caption = "Red line indicates the global average Kills per Entry.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = KPE - se,
+                ymax = KPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
+)
+```
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry),
+         sd = sd(Coins),
+         se = sd / sqrt(Entry)) |>
+  ggplot(aes(x = Map, y = CPE)) +
+  geom_bar(stat = "identity", color = "black", fill = "yellow") +
+  theme(legend.position = "none") +
+  xlab("Map") + ylab("Coins") +
+  labs(title = "Coins per Entry by Map",
+       caption = "Red line indicates the global average Coins per Entry.
+                  Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_errorbar(aes(ymin = CPE - se,
+                ymax = CPE + se),
+                width = 0.5) +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "red")
+)
+```
+
+The following two plots are mainly here for outlier detection purposes :)
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map, Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry)) |>
+  ggplot(aes(x = Class, y = KPE, color = Map)) +
+  geom_point() +
+  xlab("Class") + ylab("Kills") +
+  labs(title = "Class Kills per Entry by Map") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+)
+```
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Map, Class) |>
+  summarise(Entry = n(),
+         CPE = sum(Coins) / sum(Entry)) |>
+  ggplot(aes(x = Class, y = CPE, color = Map)) +
+  geom_point() +
+  xlab("Class") + ylab("Coins") +
+  labs(title = "Class Coins per Entry by Map") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+)
+```
+
+[Return to top.](https://maxstca.github.io/cgada/CGA-0.13.1.html)
+
+## Misc.
+
+### Coins Over Time
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Game_ID) |>
+  ggplot(aes(x = seqID, y = Coins, color = Map)) +
+  geom_point() +
+  geom_line() +
+  stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+  stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
+  labs(title = "Coins Over Time (All Maps)",
+       caption = "Bold line is the average across all games.
+       Ribbon indicates error bounds of one standard deviaton.") + xlab("Sequential Entry ID")
+)
+```
+
+The purpose of this plot is two-fold:
+
+1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, it is worth looking to see if the average number of coins earned changes over time in a meaningful way, as it could directly influence our other visualizations.
+
+2. It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
+
+### Kills per Entry versus Coins per Entry
+
+There are two main metrics of which we measure class performance within Cash Grab: Kills per Entry/Life Played (KPE) and Coins per Entry (CPE). Since coins are the win condition of the game and getting kills consistently is vital to reaching that goal, it is important to make sure that a singular class can balance those two facets of the game effectively. If a class is strong at collecting coins (which usually manifests as map control abilities), it should be vulnerable  against more selfish classes that prioritize advantages in combat. 
+
+In the past, we've displayed this as relative efficiency, which scales the metrics against each other and attempts to show how specialized a class is:
+
+```{r echo=FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         CPE = sum(Coins) / sum(Entry)) |>
+  mutate(KPE.scaled = (KPE - (0.8 * min(KPE))) / ((1.2 * max(KPE)) - (0.8 * min(KPE))),
+         CPE.scaled = (CPE - (0.8 * min(CPE))) / ((1.2 * max(CPE)) - (0.8 * min(CPE))),
+         Rel.Eff = KPE.scaled - CPE.scaled) |>
+  ggplot(aes(x = Class, y = Rel.Eff)) +
+  geom_bar(stat = "identity", color = "black", fill = "red") +
+  theme(legend.position = "none") +
+  xlab("Class") + ylab("% Difference") +
+  labs(title = "Relative Efficiency",
+       caption = "Positive values indicate more efficient kill generation per life.
+          Negative values indicate more efficient coin earnings per life.
+          Larger magnitudes suggest more extreme specializations.") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+  geom_hline(yintercept = 0, color = "black")
+)
+```
+
+Here's a scatterplot that attempts to show the relationship between KPE and CPE as well:
+
+```{r echo = FALSE}
+suppressMessages(
+  cgada |>
+  group_by(Class) |>
+  summarise(Entry = n(),
+         KPE = sum(Kills) / sum(Entry),
+         CPE = sum(Coins) / sum(Entry)) |>
+  ggplot(aes(x = KPE, y = CPE, color = Class, label = Class)) +
+  geom_point(position =) + geom_text_repel() +
+  xlab("Kills per Entry") + ylab("Coins per Entry") +
+  labs(title = "Class Specializations: Kills per Entry vs. Coins per Entry") +
+  geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "gray") +
+  geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "gray") +
+  theme(legend.position = "none") +
+  annotate(geom = "text", x = 0.65, y = 24.5, label = "Coin-specialized", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.55, y = 24.5, label = "High Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 0.65, y = 11, label = "Low Event", color = "black", alpha = 0.4) +
+  annotate(geom = "text", x = 1.55, y = 11, label = "Kill-specialized", color = "black", alpha = 0.4) +
+  theme(panel.grid.major.y = element_blank(),
+        panel.grid.minor = element_blank())
+)
+```
+
+[Return to top.](https://maxstca.github.io/cgada/CGA-0.13.1.html)
+
+## Some Fun Tidbits
+
+### Most Played Class/Trinket Loadouts
+
+```{r echo=FALSE, results = 'asis'}
+suppressMessages(
+out <- cgada |>
+  group_by(Class, Trinket) |>
+  summarise(LivesPlayed = n()) |>
+  ungroup() |>
+  arrange(desc(LivesPlayed))
+)
+
+knitr::kable(out[1:20,])
+```
+
+### Most Coins Generated in a Single Life
+
+```{r echo=FALSE, results = 'asis'}
+knitr::kable(cgada |>
+  arrange(desc(Coins)) |>
+  select(Class, Trinket, Map, Coins) |>
+  slice_head(n = 10))
+```
+
+### Most Kills in a Single Life
+
+```{r echo=FALSE, results = 'asis'}
+knitr::kable(cgada |>
+  arrange(desc(Kills)) |>
+  select(Class, Trinket, Map, Kills) |>
+  slice_head(n = 10))
+```
+
+[Return to top.](https://maxstca.github.io/cgada/CGA-0.13.1.html)
+
+## [Click here to return to the main page.](https://maxstca.github.io/cgada/)

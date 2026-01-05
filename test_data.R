@@ -12,18 +12,21 @@ generate_test_data <- function(fileName = "test_data", n_obs = 10000) {
                 "Scald", "Golden", "Bogpit", "Deepgrove", "Skullway", 
                 "Graphite")
   random_nums <- runif(n_obs)
+  random_ticks <- 
   
   
-  ID <- seq(1, n_obs, by = 1)
+  Index <- seq(1, n_obs, by = 1)
   Class <- sample(base_class, size = n_obs, replace = TRUE)
   Trinket <- sample(base_trinket, size = n_obs, replace = TRUE)
   Map <- sample(base_map, size = n_obs, replace = TRUE)
   Game_ID <- sample(c(1:50), size = n_obs, replace = TRUE)
   Kills <- sample(c(0:5), size = n_obs, replace = TRUE)
   Coins <- sample(c(1:40), size = n_obs, replace = TRUE)
-  Is_Complete <- ifelse(random_nums <= 0.05, FALSE, TRUE)
+  Complete <- ifelse(random_nums <= 0.05, FALSE, TRUE)
+  Lifetime <- round(rnorm(500, mean = 60 * 20, sd = 20 * 20))
   
-  out <- data.frame(ID, Class, Trinket, Map, Game_ID, Kills, Coins, Is_Complete)
+  
+  out <- data.frame(Index, Class, Trinket, Map, Game_ID, Kills, Coins, Complete, Lifetime)
   write.csv(out, paste0("./data/", fileName, ".csv"), row.names = FALSE)
   
 }
