@@ -83,9 +83,10 @@ theme_set(theme_clean()) #Set a default plot theme
 # Read in data
 setwd("data")
 entries1 <- read_in_data(fileName = "v0_14_1_d01_04_2026.csv", playtestDate = "01/04/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries2 <- read_in_data(fileName = "v0_14_1_d01_25_2026.csv", playtestDate = "01/25/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(entries1)
+dflist <- list(entries1, entries2)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
