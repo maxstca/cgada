@@ -1,0 +1,744 @@
+Index,Class,Trinket,Map,Game ID,Kills,Coins,Completed,Lifetime
+0,Alchemist,Risk-It Biscuit,Sunken,1,1,10,1,819
+1,Evincer,Echo Bolt,Sunken,1,1,7,1,1272
+2,Frost Knight,Lava Cake,Sunken,1,0,0,1,285
+3,Cloudbreaker,Bandage,Sunken,1,0,10,1,987
+4,Griefer,Lava Cake,Sunken,1,2,12,1,1315
+5,Evincer,Smoke Screen,Sunken,1,1,12,1,1016
+6,Evincer,Echo Bolt,Sunken,1,0,4,1,629
+7,Cloudbreaker,Bandage,Sunken,1,1,13,1,577
+8,Ranger,Bandage,Sunken,1,2,3,1,290
+9,Evincer,Echo Bolt,Sunken,1,1,22,1,1064
+10,Evincer,Bandage,Sunken,1,2,52,1,4417
+11,Cloudbreaker,Bandage,Sunken,1,0,2,1,495
+12,Champion,Lava Cake,Sunken,1,0,6,1,517
+13,Frost Knight,Smoke Screen,Sunken,1,1,5,1,630
+14,Cloudbreaker,Bandage,Sunken,1,2,17,1,757
+15,Evincer,Echo Bolt,Sunken,1,0,0,1,271
+16,Evincer,Echo Bolt,Sunken,1,1,25,1,1098
+17,Stargazer,Spring Plume,Sunken,1,1,52,1,3591
+18,Cloudbreaker,Bandage,Sunken,1,2,32,1,3137
+19,Evincer,Echo Bolt,Sunken,1,0,6,1,1383
+20,Evincer,Echo Bolt,Sunken,1,1,52,1,1269
+21,Evincer,Bandage,Sunken,1,1,0,1,635
+22,Cloudbreaker,Bandage,Sunken,1,5,83,1,2220
+23,Stargazer,Spring Plume,Sunken,1,3,46,1,1635
+24,Evincer,Bandage,Sunken,1,0,10,1,341
+25,Evincer,Echo Bolt,Sunken,1,0,11,1,341
+26,Evincer,Bandage,Sunken,1,0,2,1,246
+27,Evincer,Echo Bolt,Sunken,1,0,0,1,571
+28,Evincer,Bandage,Sunken,1,0,4,1,626
+29,Evincer,Echo Bolt,Sunken,1,0,0,1,219
+30,Evincer,Bandage,Sunken,1,0,35,0,0
+31,Evincer,Echo Bolt,Sunken,1,2,50,1,680
+32,Hexblade,Hedge Seed,Sunken,1,1,11,1,399
+33,Cloudbreaker,Bandage,Sunken,1,3,52,0,0
+34,Dancer,Vigor Flask,Sunken,1,0,1,1,162
+35,Evincer,Echo Bolt,Sunken,1,0,5,1,207
+36,Dancer,Lava Cake,Sunken,1,0,2,0,0
+37,Evincer,Echo Bolt,Sunken,1,0,0,0,0
+38,Evincer,Bandage,Polaris,2,5,94,1,7452
+39,Evincer,Echo Bolt,Polaris,2,0,6,1,505
+40,Alchemist,Vigor Flask,Polaris,2,4,34,1,2271
+41,Chronomancer,Hedge Seed,Polaris,2,1,11,1,792
+42,Evincer,Echo Bolt,Polaris,2,0,0,1,269
+43,Evincer,Echo Bolt,Polaris,2,0,12,1,1102
+44,Chronomancer,Hedge Seed,Polaris,2,0,0,1,329
+45,Chronomancer,Hedge Seed,Polaris,2,0,2,1,691
+46,Evincer,Echo Bolt,Polaris,2,1,6,1,967
+47,Frost Knight,Risk-It Biscuit,Polaris,2,3,21,1,1308
+48,Chronomancer,Hedge Seed,Polaris,2,0,2,1,315
+49,Evincer,Echo Bolt,Polaris,2,0,4,1,242
+50,Chronomancer,Hedge Seed,Polaris,2,0,0,1,293
+51,Evincer,Echo Bolt,Polaris,2,1,19,1,532
+52,Spectre,Hedge Seed,Polaris,2,2,19,1,1232
+53,Evincer,Echo Bolt,Polaris,2,0,2,1,312
+54,Chronomancer,Hedge Seed,Polaris,2,0,8,1,596
+55,Evincer,Echo Bolt,Polaris,2,1,6,1,675
+56,Chronomancer,Hedge Seed,Polaris,2,0,14,1,388
+57,Titan,Hedge Seed,Polaris,2,3,70,1,3847
+58,Evincer,Echo Bolt,Polaris,2,1,2,1,261
+59,Evincer,Echo Bolt,Polaris,2,0,3,1,378
+60,Chronomancer,Hedge Seed,Polaris,2,0,4,1,504
+61,Evincer,Echo Bolt,Polaris,2,2,50,1,1697
+62,Chronomancer,Hedge Seed,Polaris,2,1,21,1,1963
+63,Evincer,Bandage,Polaris,2,1,54,1,1808
+64,Evincer,Echo Bolt,Polaris,2,1,20,1,581
+65,Chronomancer,Hedge Seed,Polaris,2,1,41,1,1212
+66,Evincer,Echo Bolt,Polaris,2,0,2,1,184
+67,Battlesmith,Flame Trap,Polaris,2,0,4,1,400
+68,Evincer,Echo Bolt,Polaris,2,3,87,0,0
+69,Evincer,Bandage,Polaris,2,0,18,0,0
+70,Battlesmith,Echo Bolt,Polaris,2,0,16,1,499
+71,Chronomancer,Hedge Seed,Polaris,2,1,7,1,570
+72,Ranger,Bandage,Polaris,2,0,2,0,0
+73,Chronomancer,Hedge Seed,Polaris,2,0,0,0,0
+74,Evincer,Echo Bolt,Crystal,3,0,2,1,535
+75,Evincer,Bandage,Crystal,3,1,16,1,1097
+76,Skirmisher,Hedge Seed,Crystal,3,1,14,1,1029
+77,Spectre,Echo Bolt,Crystal,3,0,0,1,458
+78,Evincer,Echo Bolt,Crystal,3,0,17,1,1185
+79,Spectre,Echo Bolt,Crystal,3,2,25,1,1509
+80,Artillery,Risk-It Biscuit,Crystal,3,0,2,1,1385
+81,Alchemist,Flame Trap,Crystal,3,1,12,1,1204
+82,Evincer,Echo Bolt,Crystal,3,3,22,1,898
+83,Spectre,Echo Bolt,Crystal,3,1,36,1,946
+84,Skirmisher,Flame Trap,Crystal,3,1,0,1,296
+85,Alchemist,Nox Bomb,Crystal,3,2,39,1,935
+86,Evincer,Echo Bolt,Crystal,3,0,13,1,831
+87,Battlesmith,Hedge Seed,Crystal,3,1,10,1,861
+88,Spectre,Echo Bolt,Crystal,3,0,2,1,256
+89,Spectre,Echo Bolt,Crystal,3,3,42,1,1697
+90,Evincer,Echo Bolt,Crystal,3,0,17,1,146
+91,Alchemist,Nox Bomb,Crystal,3,2,62,1,2885
+92,Skirmisher,Nox Bomb,Crystal,3,1,12,1,456
+93,Evincer,Echo Bolt,Crystal,3,0,1,1,202
+94,Evincer,Echo Bolt,Crystal,3,0,25,1,1159
+95,Frost Knight,Spring Plume,Crystal,3,1,16,1,1086
+96,Spectre,Echo Bolt,Crystal,3,4,71,0,0
+97,Evincer,Echo Bolt,Crystal,3,0,18,1,527
+98,Battlesmith,Spring Plume,Crystal,3,2,65,1,1486
+99,Evincer,Echo Bolt,Crystal,3,0,1,1,234
+100,Evincer,Echo Bolt,Crystal,3,1,20,1,404
+101,Alchemist,Nox Bomb,Crystal,3,1,8,1,394
+102,Evincer,Echo Bolt,Crystal,3,0,5,1,283
+103,Evincer,Smoke Screen,Crystal,3,0,0,0,0
+104,Evincer,Echo Bolt,Crystal,3,0,0,0,0
+105,Alchemist,Nox Bomb,Crystal,3,0,0,0,0
+106,Evincer,Echo Bolt,Grimspire,4,0,12,1,1014
+107,Griefer,Vigor Flask,Grimspire,4,0,8,1,516
+108,Vampire,Vigor Flask,Grimspire,4,2,8,1,774
+109,Hexblade,Hedge Seed,Grimspire,4,0,26,1,2184
+110,Artillery,Flame Trap,Grimspire,4,1,18,1,1747
+111,Evincer,Echo Bolt,Grimspire,4,0,8,1,995
+112,Vampire,Vigor Flask,Grimspire,4,4,60,1,3064
+113,Spectre,Spring Plume,Grimspire,4,0,2,1,637
+114,Titan,Spring Plume,Grimspire,4,0,27,1,1685
+115,Hexblade,Lava Cake,Grimspire,4,0,13,1,702
+116,Spectre,Spring Plume,Grimspire,4,1,15,1,918
+117,Hexblade,Vigor Flask,Grimspire,4,3,52,1,2722
+118,Spectre,Spring Plume,Grimspire,4,0,43,1,1362
+119,Spectre,Flame Trap,Grimspire,4,4,68,1,2115
+120,Vampire,Vigor Flask,Grimspire,4,0,4,1,302
+121,Vampire,Vigor Flask,Grimspire,4,0,13,1,987
+122,Spectre,Spring Plume,Grimspire,4,1,2,1,506
+123,Vampire,Vigor Flask,Grimspire,4,2,68,1,1168
+124,Titan,Accelerator,Grimspire,4,0,6,1,981
+125,Hexblade,Vigor Flask,Grimspire,4,0,36,1,667
+126,Battlesmith,Nox Bomb,Grimspire,4,2,52,0,0
+127,Hexblade,Vigor Flask,Grimspire,4,0,2,0,0
+128,Titan,Accelerator,Grimspire,4,0,0,0,0
+129,Ranger,Echo Bolt,Fissure,5,0,18,1,876
+130,Hexblade,Smoke Screen,Fissure,5,1,28,1,1797
+131,Titan,Accelerator,Fissure,5,0,2,1,446
+132,Dancer,Echo Bolt,Fissure,5,1,14,1,593
+133,Titan,Accelerator,Fissure,5,0,0,1,438
+134,Vampire,Spring Plume,Fissure,5,2,29,1,1531
+135,Alchemist,Flame Trap,Fissure,5,0,26,1,1669
+136,Dancer,Echo Bolt,Fissure,5,2,30,1,843
+137,Hexblade,Bandage,Fissure,5,1,54,1,2112
+138,Cloudbreaker,Accelerator,Fissure,5,2,11,1,1166
+139,Dancer,Echo Bolt,Fissure,5,0,8,1,459
+140,Alchemist,Flame Trap,Fissure,5,1,5,1,679
+141,Dancer,Echo Bolt,Fissure,5,1,56,1,961
+142,Skirmisher,Risk-It Biscuit,Fissure,5,2,12,1,575
+143,Alchemist,Flame Trap,Fissure,5,1,19,1,1823
+144,Hexblade,Hedge Seed,Fissure,5,0,6,1,338
+145,Griefer,Echo Bolt,Fissure,5,2,49,1,1551
+146,Hexblade,Hedge Seed,Fissure,5,0,12,1,1016
+147,Dancer,Echo Bolt,Fissure,5,2,65,0,0
+148,Hexblade,Spring Plume,Fissure,5,0,10,0,0
+149,Alchemist,Flame Trap,Fissure,5,0,2,0,0
+150,Stargazer,Echo Bolt,Fissure,5,0,0,0,0
+151,Hexblade,Spring Plume,Golden,6,4,99,0,0
+152,Artillery,Bandage,Golden,6,1,26,1,2076
+153,Artillery,Hedge Seed,Golden,6,0,8,1,887
+154,Evincer,Echo Bolt,Golden,6,0,8,1,691
+155,Evincer,Echo Bolt,Golden,6,0,2,1,510
+156,Artillery,Hedge Seed,Golden,6,0,22,1,2491
+157,Evincer,Echo Bolt,Golden,6,1,17,1,860
+158,Champion,Nox Bomb,Golden,6,1,28,1,2022
+159,Evincer,Echo Bolt,Golden,6,1,35,1,2330
+160,Artillery,Hedge Seed,Golden,6,0,13,1,804
+161,Skirmisher,Bandage,Golden,6,1,20,0,0
+162,Evincer,Echo Bolt,Golden,6,0,0,0,0
+163,Hexblade,Spring Plume,Dustworks,7,0,6,1,302
+164,Cloudbreaker,Hedge Seed,Dustworks,7,3,30,1,2495
+165,Titan,Spring Plume,Dustworks,7,3,59,1,2647
+166,Hexblade,Spring Plume,Dustworks,7,0,0,1,331
+167,Hexblade,Spring Plume,Dustworks,7,0,2,1,457
+168,Hexblade,Hedge Seed,Dustworks,7,0,4,1,330
+169,Evincer,Echo Bolt,Dustworks,7,1,17,1,814
+170,Hexblade,Hedge Seed,Dustworks,7,1,11,1,758
+171,Evincer,Echo Bolt,Dustworks,7,0,4,1,223
+172,Artillery,Risk-It Biscuit,Dustworks,7,4,43,1,4484
+173,Hexblade,Hedge Seed,Dustworks,7,1,53,1,2016
+174,Evincer,Echo Bolt,Dustworks,7,1,30,1,710
+175,Titan,Spring Plume,Dustworks,7,1,24,1,1569
+176,Evincer,Echo Bolt,Dustworks,7,0,8,1,857
+177,Evincer,Bandage,Dustworks,7,0,2,1,467
+178,Evincer,Echo Bolt,Dustworks,7,2,61,1,2272
+179,Titan,Spring Plume,Dustworks,7,2,54,1,2791
+180,Hexblade,Hedge Seed,Dustworks,7,0,51,1,2353
+181,Hexblade,Bandage,Dustworks,7,0,0,1,911
+182,Hexblade,Bandage,Dustworks,7,0,12,1,1449
+183,Evincer,Echo Bolt,Dustworks,7,0,19,1,571
+184,Hexblade,Hedge Seed,Dustworks,7,1,59,0,0
+185,Hexblade,Hedge Seed,Dustworks,7,1,8,0,0
+186,Evincer,Echo Bolt,Dustworks,7,0,0,0,0
+187,Frost Knight,Lava Cake,Polaris,8,1,6,1,475
+188,Hexblade,Bandage,Polaris,8,0,4,1,352
+189,Griefer,Nox Bomb,Polaris,8,5,43,1,2624
+190,Hexblade,Bandage,Polaris,8,0,4,1,280
+191,Chronomancer,Nox Bomb,Polaris,8,1,2,1,306
+192,Hexblade,Bandage,Polaris,8,0,0,1,432
+193,Alchemist,Hedge Seed,Polaris,8,2,9,1,1524
+194,Hexblade,Bandage,Polaris,8,0,6,1,400
+195,Hexblade,Bandage,Polaris,8,0,0,1,852
+196,Titan,Spring Plume,Polaris,8,0,0,1,150
+197,Evincer,Smoke Screen,Polaris,8,6,59,1,2579
+198,Hexblade,Bandage,Polaris,8,1,6,1,1373
+199,Stargazer,Bandage,Polaris,8,0,2,1,551
+200,Griefer,Nox Bomb,Polaris,8,0,4,1,365
+201,Evincer,Echo Bolt,Polaris,8,0,7,1,380
+202,Griefer,Nox Bomb,Polaris,8,2,9,1,945
+203,Stargazer,Bandage,Polaris,8,0,4,1,386
+204,Evincer,Echo Bolt,Polaris,8,2,16,1,733
+205,Stargazer,Bandage,Polaris,8,0,0,1,260
+206,Hexblade,Bandage,Polaris,8,1,4,1,823
+207,Griefer,Nox Bomb,Polaris,8,0,3,1,210
+208,Stargazer,Bandage,Polaris,8,0,17,1,1697
+209,Griefer,Nox Bomb,Polaris,8,0,6,1,247
+210,Evincer,Echo Bolt,Polaris,8,0,10,1,485
+211,Griefer,Nox Bomb,Polaris,8,2,43,1,1235
+212,Hexblade,Bandage,Polaris,8,1,1,1,631
+213,Evincer,Nox Bomb,Polaris,8,0,3,1,478
+214,Evincer,Echo Bolt,Polaris,8,2,42,1,960
+215,Artillery,Flame Trap,Polaris,8,2,36,1,1138
+216,Hexblade,Bandage,Polaris,8,1,8,1,749
+217,Stargazer,Bandage,Polaris,8,0,15,1,899
+218,Griefer,Nox Bomb,Polaris,8,1,32,1,1154
+219,Hexblade,Bandage,Polaris,8,1,0,1,494
+220,Evincer,Echo Bolt,Polaris,8,0,37,1,910
+221,Spectre,Accelerator,Polaris,8,3,27,1,1301
+222,Hexblade,Bandage,Polaris,8,0,6,1,754
+223,Champion,Lava Cake,Polaris,8,2,29,1,742
+224,Griefer,Nox Bomb,Polaris,8,2,47,1,1803
+225,Evincer,Echo Bolt,Polaris,8,0,7,1,322
+226,Hexblade,Bandage,Polaris,8,1,5,1,306
+227,Champion,Lava Cake,Polaris,8,1,39,1,1768
+228,Ranger,Nox Bomb,Polaris,8,1,15,1,1417
+229,Hexblade,Bandage,Polaris,8,0,41,1,1126
+230,Griefer,Nox Bomb,Polaris,8,1,36,1,894
+231,Hexblade,Bandage,Polaris,8,0,0,1,302
+232,Griefer,Smoke Screen,Polaris,8,3,51,1,481
+233,Hexblade,Bandage,Polaris,8,1,30,1,428
+234,Champion,Lava Cake,Polaris,8,2,50,1,893
+235,Griefer,Nox Bomb,Polaris,8,3,61,0,0
+236,Evincer,Echo Bolt,Polaris,8,0,5,1,344
+237,Spectre,Accelerator,Polaris,8,0,10,1,573
+238,Hexblade,Bandage,Polaris,8,0,0,1,379
+239,Champion,Lava Cake,Polaris,8,0,17,0,0
+240,Hexblade,Bandage,Polaris,8,0,0,0,0
+241,Stargazer,Nox Bomb,Polaris,8,0,0,0,0
+242,Dancer,Lava Cake,Bogpit,9,1,18,1,1068
+243,Griefer,Nox Bomb,Bogpit,9,3,58,1,2880
+244,Battlesmith,Risk-It Biscuit,Bogpit,9,0,0,1,186
+245,Hexblade,Bandage,Bogpit,9,0,2,1,616
+246,Battlesmith,Risk-It Biscuit,Bogpit,9,1,27,1,1000
+247,Evincer,Echo Bolt,Bogpit,9,0,2,1,2207
+248,Hexblade,Bandage,Bogpit,9,0,2,1,336
+249,Frost Knight,Smoke Screen,Bogpit,9,2,29,1,998
+250,Hexblade,Bandage,Bogpit,9,0,48,1,2262
+251,Battlesmith,Risk-It Biscuit,Bogpit,9,0,4,1,327
+252,Battlesmith,Risk-It Biscuit,Bogpit,9,1,16,1,1023
+253,Frost Knight,Nox Bomb,Bogpit,9,0,2,1,412
+254,Skirmisher,Lava Cake,Bogpit,9,4,18,1,705
+255,Battlesmith,Risk-It Biscuit,Bogpit,9,0,17,1,808
+256,Griefer,Nox Bomb,Bogpit,9,0,0,1,195
+257,Evincer,Echo Bolt,Bogpit,9,1,17,1,343
+258,Griefer,Nox Bomb,Bogpit,9,1,39,1,711
+259,Dancer,Echo Bolt,Bogpit,9,3,15,1,544
+260,Hexblade,Bandage,Bogpit,9,0,31,1,875
+261,Evincer,Echo Bolt,Bogpit,9,0,27,1,478
+262,Battlesmith,Risk-It Biscuit,Bogpit,9,2,27,1,447
+263,Vampire,Spring Plume,Bogpit,9,2,34,1,592
+264,Griefer,Nox Bomb,Bogpit,9,0,2,1,232
+265,Evincer,Echo Bolt,Bogpit,9,1,11,1,301
+266,Battlesmith,Risk-It Biscuit,Bogpit,9,0,28,1,721
+267,Griefer,Nox Bomb,Bogpit,9,4,84,0,0
+268,Evincer,Echo Bolt,Bogpit,9,0,12,1,618
+269,Vampire,Hedge Seed,Bogpit,9,1,19,1,759
+270,Evincer,Bandage,Bogpit,9,1,0,1,322
+271,Battlesmith,Risk-It Biscuit,Bogpit,9,0,7,0,0
+272,Evincer,Echo Bolt,Bogpit,9,0,0,0,0
+273,Spectre,Vigor Flask,Bogpit,9,0,0,0,0
+274,Evincer,Nox Bomb,Scald,10,1,17,1,1192
+275,Evincer,Bandage,Scald,10,0,8,1,694
+276,Stargazer,Smoke Screen,Scald,10,1,0,1,619
+277,Titan,Flame Trap,Scald,10,1,5,1,763
+278,Alchemist,Hedge Seed,Scald,10,0,2,1,463
+279,Evincer,Bandage,Scald,10,1,2,1,550
+280,Alchemist,Hedge Seed,Scald,10,3,17,1,956
+281,Titan,Flame Trap,Scald,10,0,6,1,396
+282,Stargazer,Accelerator,Scald,10,1,22,1,861
+283,Griefer,Bandage,Scald,10,1,11,1,429
+284,Evincer,Bandage,Scald,10,0,4,1,418
+285,Titan,Flame Trap,Scald,10,0,8,1,965
+286,Griefer,Nox Bomb,Scald,10,6,56,1,2628
+287,Alchemist,Hedge Seed,Scald,10,2,19,1,1444
+288,Evincer,Bandage,Scald,10,1,5,1,630
+289,Stargazer,Accelerator,Scald,10,0,2,1,352
+290,Titan,Flame Trap,Scald,10,0,4,1,290
+291,Evincer,Bandage,Scald,10,0,19,1,1450
+292,Stargazer,Accelerator,Scald,10,1,3,1,464
+293,Titan,Flame Trap,Scald,10,0,12,1,395
+294,Vampire,Accelerator,Scald,10,0,2,1,984
+295,Stargazer,Accelerator,Scald,10,1,13,1,397
+296,Titan,Flame Trap,Scald,10,0,7,1,590
+297,Alchemist,Hedge Seed,Scald,10,0,4,1,826
+298,Stargazer,Accelerator,Scald,10,2,36,1,966
+299,Titan,Flame Trap,Scald,10,1,25,1,487
+300,Vampire,Accelerator,Scald,10,2,38,1,825
+301,Evincer,Bandage,Scald,10,0,39,1,4301
+302,Alchemist,Hedge Seed,Scald,10,0,0,1,2744
+303,Griefer,Vigor Flask,Scald,10,1,7,1,690
+304,Titan,Flame Trap,Scald,10,0,14,1,563
+305,Stargazer,Accelerator,Scald,10,2,21,1,1102
+306,Vampire,Accelerator,Scald,10,4,13,1,1932
+307,Vampire,Smoke Screen,Scald,10,2,77,1,2731
+308,Titan,Flame Trap,Scald,10,0,7,1,215
+309,Titan,Flame Trap,Scald,10,0,5,1,489
+310,Stargazer,Accelerator,Scald,10,1,20,1,2010
+311,Titan,Flame Trap,Scald,10,0,8,1,367
+312,Titan,Flame Trap,Scald,10,3,92,1,1835
+313,Alchemist,Hedge Seed,Scald,10,0,15,1,670
+314,Cloudbreaker,Smoke Screen,Scald,10,0,0,1,609
+315,Chronomancer,Accelerator,Scald,10,0,2,1,240
+316,Alchemist,Hedge Seed,Scald,10,0,11,1,489
+317,Champion,Flame Trap,Scald,10,2,28,1,636
+318,Stargazer,Accelerator,Scald,10,1,4,1,367
+319,Evincer,Accelerator,Scald,10,2,20,1,536
+320,Titan,Flame Trap,Scald,10,1,49,1,364
+321,Stargazer,Accelerator,Scald,10,3,59,1,589
+322,Alchemist,Hedge Seed,Scald,10,0,42,1,528
+323,Evincer,Bandage,Scald,10,0,12,1,1195
+324,Evincer,Spring Plume,Scald,10,0,13,1,511
+325,Battlesmith,Accelerator,Scald,10,1,29,1,511
+326,Titan,Flame Trap,Scald,10,1,65,1,828
+327,Alchemist,Hedge Seed,Scald,10,3,35,1,954
+328,Stargazer,Accelerator,Scald,10,0,4,1,342
+329,Evincer,Spring Plume,Scald,10,1,41,1,984
+330,Battlesmith,Accelerator,Scald,10,2,42,1,454
+331,Stargazer,Accelerator,Scald,10,0,28,1,297
+332,Titan,Flame Trap,Scald,10,0,40,1,598
+333,Evincer,Bandage,Scald,10,0,13,1,1149
+334,Stargazer,Accelerator,Scald,10,1,19,1,288
+335,Battlesmith,Accelerator,Scald,10,2,10,1,422
+336,Alchemist,Hedge Seed,Scald,10,0,9,1,446
+337,Stargazer,Accelerator,Scald,10,3,78,0,0
+338,Ranger,Nox Bomb,Scald,10,1,17,1,420
+339,Titan,Flame Trap,Scald,10,0,44,0,0
+340,Battlesmith,Accelerator,Scald,10,1,11,1,449
+341,Alchemist,Hedge Seed,Scald,10,1,6,0,0
+342,Spectre,Spring Plume,Scald,10,0,0,0,0
+343,Battlesmith,Accelerator,Scald,10,0,0,0,0
+344,Evincer,Risk-It Biscuit,Graphite,11,1,30,1,1345
+345,Evincer,Bandage,Graphite,11,0,16,1,1300
+346,Hexblade,Spring Plume,Graphite,11,0,28,1,1274
+347,Titan,Flame Trap,Graphite,11,0,4,1,765
+348,Champion,Nox Bomb,Graphite,11,3,39,1,1612
+349,Artillery,Echo Bolt,Graphite,11,1,12,1,529
+350,Alchemist,Nox Bomb,Graphite,11,0,8,1,538
+351,Evincer,Bandage,Graphite,11,0,13,1,907
+352,Alchemist,Nox Bomb,Graphite,11,1,19,1,999
+353,Artillery,Echo Bolt,Graphite,11,1,24,1,1509
+354,Evincer,Flame Trap,Graphite,11,1,8,1,585
+355,Champion,Nox Bomb,Graphite,11,3,53,1,1217
+356,Alchemist,Nox Bomb,Graphite,11,3,64,1,1954
+357,Dancer,Accelerator,Graphite,11,0,2,1,297
+358,Evincer,Nox Bomb,Graphite,11,0,12,1,1268
+359,Champion,Spring Plume,Graphite,11,1,56,1,1150
+360,Champion,Nox Bomb,Graphite,11,1,5,1,647
+361,Evincer,Nox Bomb,Graphite,11,0,23,1,674
+362,Champion,Nox Bomb,Graphite,11,2,82,0,0
+363,Skirmisher,Lava Cake,Graphite,11,2,44,1,829
+364,Alchemist,Nox Bomb,Graphite,11,1,11,1,1069
+365,Evincer,Nox Bomb,Graphite,11,0,9,1,477
+366,Artillery,Echo Bolt,Graphite,11,0,8,1,634
+367,Battlesmith,Vigor Flask,Graphite,11,1,9,0,0
+368,Alchemist,Nox Bomb,Graphite,11,0,0,0,0
+369,Chronomancer,Nox Bomb,Graphite,11,0,0,0,0
+370,Chronomancer,Nox Bomb,Grimspire,12,0,8,1,567
+371,Griefer,Hedge Seed,Grimspire,12,0,8,1,870
+372,Dancer,Smoke Screen,Grimspire,12,1,4,1,376
+373,Battlesmith,Echo Bolt,Grimspire,12,4,33,1,1921
+374,Chronomancer,Nox Bomb,Grimspire,12,0,25,1,2350
+375,Dancer,Smoke Screen,Grimspire,12,0,4,1,433
+376,Dancer,Vigor Flask,Grimspire,12,1,9,1,618
+377,Cloudbreaker,Vigor Flask,Grimspire,12,0,10,1,928
+378,Dancer,Smoke Screen,Grimspire,12,0,6,1,484
+379,Evincer,Accelerator,Grimspire,12,2,31,1,821
+380,Griefer,Lava Cake,Grimspire,12,2,39,1,1056
+381,Spectre,Flame Trap,Grimspire,12,0,12,1,1133
+382,Battlesmith,Vigor Flask,Grimspire,12,1,0,1,321
+383,Vampire,Echo Bolt,Grimspire,12,4,52,1,1743
+384,Battlesmith,Vigor Flask,Grimspire,12,0,14,1,975
+385,Chronomancer,Nox Bomb,Grimspire,12,0,4,1,978
+386,Griefer,Lava Cake,Grimspire,12,1,63,1,2096
+387,Battlesmith,Vigor Flask,Grimspire,12,1,10,1,452
+388,Spectre,Flame Trap,Grimspire,12,0,2,1,894
+389,Chronomancer,Nox Bomb,Grimspire,12,0,6,1,690
+390,Battlesmith,Vigor Flask,Grimspire,12,5,91,0,0
+391,Chronomancer,Hedge Seed,Grimspire,12,1,34,1,1817
+392,Chronomancer,Nox Bomb,Grimspire,12,0,20,0,0
+393,Battlesmith,Nox Bomb,Grimspire,12,0,7,1,431
+394,Griefer,Lava Cake,Grimspire,12,1,31,0,0
+395,Battlesmith,Nox Bomb,Grimspire,12,0,4,1,422
+396,Hexblade,Spring Plume,Grimspire,12,0,3,1,324
+397,Battlesmith,Nox Bomb,Grimspire,12,0,2,0,0
+398,Dancer,Hedge Seed,Grimspire,12,0,0,0,0
+399,Skirmisher,Lava Cake,Bogpit,13,1,14,1,927
+400,Griefer,Lava Cake,Bogpit,13,0,6,1,420
+401,Hexblade,Smoke Screen,Bogpit,13,0,2,1,531
+402,Griefer,Lava Cake,Bogpit,13,1,16,1,917
+403,Artillery,Bandage,Bogpit,13,0,2,1,486
+404,Hexblade,Lava Cake,Bogpit,13,1,5,1,427
+405,Battlesmith,Nox Bomb,Bogpit,13,2,3,1,787
+406,Cloudbreaker,Nox Bomb,Bogpit,13,1,53,1,2148
+407,Hexblade,Lava Cake,Bogpit,13,6,65,1,2667
+408,Artillery,Bandage,Bogpit,13,0,4,1,1102
+409,Hexblade,Smoke Screen,Bogpit,13,0,9,1,1423
+410,Griefer,Lava Cake,Bogpit,13,0,9,1,1001
+411,Griefer,Lava Cake,Bogpit,13,0,10,1,820
+412,Artillery,Bandage,Bogpit,13,0,4,1,983
+413,Hexblade,Smoke Screen,Bogpit,13,0,6,1,1000
+414,Cloudbreaker,Risk-It Biscuit,Bogpit,13,3,44,1,1019
+415,Battlesmith,Nox Bomb,Bogpit,13,0,1,1,268
+416,Griefer,Lava Cake,Bogpit,13,3,22,1,1029
+417,Battlesmith,Nox Bomb,Bogpit,13,1,34,1,1676
+418,Hexblade,Smoke Screen,Bogpit,13,0,2,1,581
+419,Dancer,Bandage,Bogpit,13,1,4,1,1039
+420,Hexblade,Lava Cake,Bogpit,13,2,61,1,527
+421,Vampire,Smoke Screen,Bogpit,13,0,10,1,344
+422,Hexblade,Smoke Screen,Bogpit,13,0,10,1,378
+423,Griefer,Lava Cake,Bogpit,13,4,44,1,654
+424,Alchemist,Hedge Seed,Bogpit,13,0,0,1,267
+425,Hexblade,Lava Cake,Bogpit,13,0,5,1,308
+426,Hexblade,Smoke Screen,Bogpit,13,0,26,1,717
+427,Chronomancer,Vigor Flask,Bogpit,13,1,24,1,481
+428,Hexblade,Lava Cake,Bogpit,13,0,27,1,442
+429,Dancer,Bandage,Bogpit,13,3,43,1,835
+430,Griefer,Lava Cake,Bogpit,13,1,0,1,276
+431,Battlesmith,Nox Bomb,Bogpit,13,2,34,1,464
+432,Battlesmith,Nox Bomb,Bogpit,13,0,4,1,507
+433,Griefer,Lava Cake,Bogpit,13,0,8,1,382
+434,Hexblade,Lava Cake,Bogpit,13,1,13,1,835
+435,Hexblade,Smoke Screen,Bogpit,13,1,6,1,1218
+436,Battlesmith,Nox Bomb,Bogpit,13,0,65,1,2268
+437,Griefer,Lava Cake,Bogpit,13,0,7,1,288
+438,Dancer,Bandage,Bogpit,13,2,30,1,976
+439,Dancer,Smoke Screen,Bogpit,13,1,9,1,381
+440,Griefer,Lava Cake,Bogpit,13,0,14,1,432
+441,Hexblade,Lava Cake,Bogpit,13,3,24,1,1596
+442,Champion,Nox Bomb,Bogpit,13,1,63,1,1735
+443,Griefer,Lava Cake,Bogpit,13,0,19,1,691
+444,Hexblade,Smoke Screen,Bogpit,13,1,20,1,1090
+445,Griefer,Lava Cake,Bogpit,13,2,14,1,741
+446,Battlesmith,Nox Bomb,Bogpit,13,2,47,1,576
+447,Hexblade,Lava Cake,Bogpit,13,0,0,0,0
+448,Hexblade,Smoke Screen,Bogpit,13,0,35,1,626
+449,Artillery,Accelerator,Bogpit,13,3,4,0,0
+450,Griefer,Lava Cake,Bogpit,13,0,3,1,351
+451,Dancer,Bandage,Bogpit,13,1,12,1,364
+452,Battlesmith,Nox Bomb,Bogpit,13,0,56,0,0
+453,Griefer,Lava Cake,Bogpit,13,0,4,0,0
+454,Hexblade,Smoke Screen,Bogpit,13,0,0,0,0
+455,Dancer,Bandage,Bogpit,13,0,2,0,0
+456,Champion,Flame Trap,Skullway,14,1,37,1,1660
+457,Evincer,Vigor Flask,Skullway,14,1,14,1,1073
+458,Hexblade,Smoke Screen,Skullway,14,0,6,1,1314
+459,Hexblade,Bandage,Skullway,14,0,0,1,424
+460,Evincer,Echo Bolt,Skullway,14,0,4,1,738
+461,Titan,Flame Trap,Skullway,14,0,6,1,726
+462,Hexblade,Bandage,Skullway,14,7,70,1,3120
+463,Evincer,Echo Bolt,Skullway,14,0,6,1,820
+464,Evincer,Vigor Flask,Skullway,14,1,24,1,1635
+465,Hexblade,Smoke Screen,Skullway,14,1,40,1,2646
+466,Artillery,Nox Bomb,Skullway,14,2,63,1,2816
+467,Titan,Flame Trap,Skullway,14,0,2,1,555
+468,Evincer,Echo Bolt,Skullway,14,0,0,1,480
+469,Alchemist,Smoke Screen,Skullway,14,0,0,1,288
+470,Evincer,Hedge Seed,Skullway,14,1,14,1,859
+471,Alchemist,Smoke Screen,Skullway,14,0,0,1,612
+472,Hexblade,Bandage,Skullway,14,3,31,1,742
+473,Alchemist,Smoke Screen,Skullway,14,0,42,1,1173
+474,Evincer,Risk-It Biscuit,Skullway,14,0,4,1,242
+475,Hexblade,Smoke Screen,Skullway,14,0,14,1,711
+476,Titan,Flame Trap,Skullway,14,1,12,1,1867
+477,Evincer,Smoke Screen,Skullway,14,3,87,0,0
+478,Ranger,Echo Bolt,Skullway,14,3,25,1,1650
+479,Hexblade,Bandage,Skullway,14,1,19,0,0
+480,Hexblade,Smoke Screen,Skullway,14,0,12,1,663
+481,Alchemist,Smoke Screen,Skullway,14,0,2,1,664
+482,Hexblade,Smoke Screen,Skullway,14,0,0,1,299
+483,Alchemist,Smoke Screen,Skullway,14,0,8,0,0
+484,Hexblade,Smoke Screen,Skullway,14,0,0,0,0
+485,Titan,Flame Trap,Skullway,14,0,2,0,0
+486,Cloudbreaker,Lava Cake,Skullway,14,0,0,0,0
+487,Hexblade,Smoke Screen,Golden,15,0,6,1,1095
+488,Evincer,Flame Trap,Golden,15,1,12,1,584
+489,Spectre,Spring Plume,Golden,15,2,88,1,4923
+490,Artillery,Accelerator,Golden,15,0,0,1,325
+491,Evincer,Smoke Screen,Golden,15,0,8,1,741
+492,Artillery,Accelerator,Golden,15,0,12,1,1311
+493,Spectre,Spring Plume,Golden,15,2,24,1,1196
+494,Evincer,Smoke Screen,Golden,15,0,4,1,269
+495,Hexblade,Smoke Screen,Golden,15,0,23,1,1625
+496,Alchemist,Nox Bomb,Golden,15,5,45,1,3820
+497,Evincer,Smoke Screen,Golden,15,1,17,1,1774
+498,Artillery,Accelerator,Golden,15,0,4,1,449
+499,Dancer,Vigor Flask,Golden,15,0,6,1,522
+500,Artillery,Accelerator,Golden,15,2,28,1,1711
+501,Champion,Nox Bomb,Golden,15,1,12,1,529
+502,Hexblade,Smoke Screen,Golden,15,1,10,1,662
+503,Evincer,Vigor Flask,Golden,15,0,4,1,473
+504,Evincer,Smoke Screen,Golden,15,0,0,1,287
+505,Hexblade,Smoke Screen,Golden,15,0,7,1,497
+506,Skirmisher,Vigor Flask,Golden,15,7,63,1,3136
+507,Hexblade,Lava Cake,Golden,15,1,78,1,2160
+508,Hexblade,Smoke Screen,Golden,15,0,0,1,435
+509,Artillery,Accelerator,Golden,15,0,4,1,411
+510,Hexblade,Smoke Screen,Golden,15,1,2,1,537
+511,Artillery,Accelerator,Golden,15,0,8,1,1059
+512,Spectre,Spring Plume,Golden,15,1,5,1,981
+513,Hexblade,Smoke Screen,Golden,15,0,10,1,964
+514,Spectre,Nox Bomb,Golden,15,1,12,1,947
+515,Artillery,Accelerator,Golden,15,1,13,1,687
+516,Hexblade,Lava Cake,Golden,15,0,11,1,422
+517,Spectre,Spring Plume,Golden,15,1,12,1,552
+518,Hexblade,Smoke Screen,Golden,15,0,8,1,610
+519,Hexblade,Lava Cake,Golden,15,2,67,1,1414
+520,Artillery,Accelerator,Golden,15,0,22,1,889
+521,Spectre,Nox Bomb,Golden,15,1,2,1,412
+522,Spectre,Spring Plume,Golden,15,0,46,1,785
+523,Cloudbreaker,Flame Trap,Golden,15,5,62,1,1737
+524,Hexblade,Smoke Screen,Golden,15,1,1,1,677
+525,Frost Knight,Nox Bomb,Golden,15,3,92,1,1052
+526,Artillery,Accelerator,Golden,15,0,0,1,545
+527,Spectre,Spring Plume,Golden,15,1,2,1,161
+528,Hexblade,Smoke Screen,Golden,15,0,18,1,499
+529,Hexblade,Lava Cake,Golden,15,1,5,1,367
+530,Spectre,Spring Plume,Golden,15,0,5,1,168
+531,Spectre,Spring Plume,Golden,15,1,37,1,153
+532,Artillery,Accelerator,Golden,15,1,10,1,596
+533,Frost Knight,Nox Bomb,Golden,15,0,6,1,369
+534,Hexblade,Lava Cake,Golden,15,1,20,1,788
+535,Hexblade,Smoke Screen,Golden,15,0,4,1,573
+536,Battlesmith,Nox Bomb,Golden,15,1,28,1,522
+537,Hexblade,Hedge Seed,Golden,15,0,3,1,365
+538,Frost Knight,Nox Bomb,Golden,15,5,43,1,669
+539,Artillery,Accelerator,Golden,15,1,20,1,627
+540,Champion,Bandage,Golden,15,0,12,1,259
+541,Hexblade,Smoke Screen,Golden,15,1,7,1,642
+542,Battlesmith,Nox Bomb,Golden,15,1,6,1,272
+543,Hexblade,Lava Cake,Golden,15,1,41,1,477
+544,Champion,Echo Bolt,Golden,15,1,35,1,723
+545,Frost Knight,Nox Bomb,Golden,15,2,23,1,624
+546,Battlesmith,Nox Bomb,Golden,15,0,35,1,328
+547,Artillery,Accelerator,Golden,15,0,39,1,1449
+548,Hexblade,Smoke Screen,Golden,15,1,0,1,658
+549,Griefer,Lava Cake,Golden,15,0,6,1,254
+550,Battlesmith,Nox Bomb,Golden,15,1,37,1,555
+551,Griefer,Lava Cake,Golden,15,1,25,1,550
+552,Frost Knight,Nox Bomb,Golden,15,1,8,1,563
+553,Titan,Smoke Screen,Golden,15,1,10,1,588
+554,Hexblade,Smoke Screen,Golden,15,0,6,1,858
+555,Battlesmith,Nox Bomb,Golden,15,1,37,1,619
+556,Griefer,Lava Cake,Golden,15,4,51,1,1520
+557,Frost Knight,Nox Bomb,Golden,15,1,14,1,489
+558,Alchemist,Echo Bolt,Golden,15,2,39,1,884
+559,Battlesmith,Nox Bomb,Golden,15,1,9,1,240
+560,Artillery,Accelerator,Golden,15,0,0,1,324
+561,Frost Knight,Nox Bomb,Golden,15,1,5,1,407
+562,Hexblade,Smoke Screen,Golden,15,0,4,1,462
+563,Battlesmith,Nox Bomb,Golden,15,1,32,1,494
+564,Artillery,Accelerator,Golden,15,1,36,0,0
+565,Vampire,Risk-It Biscuit,Golden,15,0,15,1,362
+566,Frost Knight,Nox Bomb,Golden,15,1,27,1,419
+567,Hexblade,Smoke Screen,Golden,15,0,0,0,0
+568,Battlesmith,Nox Bomb,Golden,15,2,72,0,0
+569,Chronomancer,Vigor Flask,Golden,15,0,0,0,0
+570,Griefer,Lava Cake,Golden,15,0,1,0,0
+571,Frost Knight,Nox Bomb,Golden,15,0,0,0,0
+572,Dancer,Bandage,Deepgrove,16,0,6,1,492
+573,Hexblade,Smoke Screen,Deepgrove,16,0,4,1,571
+574,Battlesmith,Nox Bomb,Deepgrove,16,2,22,1,2058
+575,Griefer,Lava Cake,Deepgrove,16,1,1,1,366
+576,Dancer,Bandage,Deepgrove,16,0,6,1,511
+577,Vampire,Nox Bomb,Deepgrove,16,5,51,1,3126
+578,Hexblade,Smoke Screen,Deepgrove,16,0,8,1,684
+579,Ranger,Hedge Seed,Deepgrove,16,0,4,1,677
+580,Stargazer,Accelerator,Deepgrove,16,1,36,1,2072
+581,Alchemist,Flame Trap,Deepgrove,16,1,0,1,507
+582,Hexblade,Smoke Screen,Deepgrove,16,0,1,1,295
+583,Champion,Flame Trap,Deepgrove,16,0,2,1,615
+584,Hexblade,Smoke Screen,Deepgrove,16,1,22,1,1266
+585,Ranger,Hedge Seed,Deepgrove,16,1,39,1,3020
+586,Battlesmith,Nox Bomb,Deepgrove,16,0,4,1,534
+587,Cloudbreaker,Lava Cake,Deepgrove,16,3,52,1,2041
+588,Battlesmith,Nox Bomb,Deepgrove,16,1,33,1,1970
+589,Stargazer,Accelerator,Deepgrove,16,0,6,1,653
+590,Hexblade,Smoke Screen,Deepgrove,16,0,15,1,914
+591,Stargazer,Accelerator,Deepgrove,16,1,35,1,1284
+592,Evincer,Nox Bomb,Deepgrove,16,1,24,1,1479
+593,Hexblade,Smoke Screen,Deepgrove,16,1,29,1,1742
+594,Dancer,Nox Bomb,Deepgrove,16,0,21,1,867
+595,Battlesmith,Nox Bomb,Deepgrove,16,1,48,1,1315
+596,Ranger,Hedge Seed,Deepgrove,16,2,35,1,1180
+597,Stargazer,Accelerator,Deepgrove,16,1,3,1,552
+598,Ranger,Bandage,Deepgrove,16,2,58,0,0
+599,Stargazer,Accelerator,Deepgrove,16,0,8,1,747
+600,Evincer,Nox Bomb,Deepgrove,16,2,75,0,0
+601,Hexblade,Smoke Screen,Deepgrove,16,0,4,1,770
+602,Battlesmith,Nox Bomb,Deepgrove,16,0,6,0,0
+603,Ranger,Hedge Seed,Deepgrove,16,1,7,1,507
+604,Stargazer,Accelerator,Deepgrove,16,2,1,1,351
+605,Ranger,Hedge Seed,Deepgrove,16,0,0,0,0
+606,Hexblade,Smoke Screen,Deepgrove,16,0,0,0,0
+607,Skirmisher,Risk-It Biscuit,Sunken,17,0,12,1,760
+608,Griefer,Lava Cake,Sunken,17,0,6,1,1040
+609,Griefer,Lava Cake,Sunken,17,2,21,1,1554
+610,Griefer,Hedge Seed,Sunken,17,0,2,1,621
+611,Evincer,Nox Bomb,Sunken,17,2,13,1,1035
+612,Skirmisher,Echo Bolt,Sunken,17,1,2,1,238
+613,Griefer,Hedge Seed,Sunken,17,1,7,1,849
+614,Titan,Spring Plume,Sunken,17,0,8,1,943
+615,Griefer,Lava Cake,Sunken,17,0,0,1,226
+616,Griefer,Lava Cake,Sunken,17,1,0,1,341
+617,Evincer,Nox Bomb,Sunken,17,3,8,1,433
+618,Griefer,Lava Cake,Sunken,17,0,17,1,580
+619,Griefer,Hedge Seed,Sunken,17,0,5,1,289
+620,Griefer,Lava Cake,Sunken,17,2,9,1,494
+621,Hexblade,Bandage,Sunken,17,1,3,1,399
+622,Griefer,Hedge Seed,Sunken,17,2,21,1,998
+623,Griefer,Lava Cake,Sunken,17,1,7,1,886
+624,Griefer,Lava Cake,Sunken,17,3,15,1,1013
+625,Frost Knight,Flame Trap,Sunken,17,0,4,1,593
+626,Griefer,Nox Bomb,Sunken,17,0,0,1,248
+627,Alchemist,Nox Bomb,Sunken,17,1,6,1,498
+628,Griefer,Nox Bomb,Sunken,17,1,14,1,420
+629,Griefer,Hedge Seed,Sunken,17,0,3,1,300
+630,Griefer,Lava Cake,Sunken,17,2,8,1,352
+631,Griefer,Lava Cake,Sunken,17,1,14,1,436
+632,Griefer,Hedge Seed,Sunken,17,1,2,1,248
+633,Griefer,Hedge Seed,Sunken,17,1,4,1,386
+634,Griefer,Lava Cake,Sunken,17,2,6,1,586
+635,Griefer,Hedge Seed,Sunken,17,0,5,1,621
+636,Griefer,Hedge Seed,Sunken,17,0,10,1,229
+637,Griefer,Lava Cake,Sunken,17,2,13,1,673
+638,Griefer,Hedge Seed,Sunken,17,2,20,1,590
+639,Griefer,Hedge Seed,Sunken,17,0,2,1,420
+640,Griefer,Lava Cake,Sunken,17,1,10,1,550
+641,Griefer,Hedge Seed,Sunken,17,0,6,1,595
+642,Griefer,Hedge Seed,Sunken,17,1,22,1,1283
+643,Griefer,Lava Cake,Sunken,17,2,20,1,1015
+644,Griefer,Hedge Seed,Sunken,17,1,18,1,574
+645,Griefer,Lava Cake,Sunken,17,0,2,1,468
+646,Griefer,Hedge Seed,Sunken,17,1,29,1,800
+647,Griefer,Hedge Seed,Sunken,17,0,1,1,222
+648,Griefer,Lava Cake,Sunken,17,4,33,1,970
+649,Griefer,Hedge Seed,Sunken,17,0,4,1,272
+650,Griefer,Lava Cake,Sunken,17,1,23,1,444
+651,Griefer,Hedge Seed,Sunken,17,1,14,1,680
+652,Griefer,Hedge Seed,Sunken,17,0,0,1,255
+653,Griefer,Hedge Seed,Sunken,17,0,0,1,207
+654,Griefer,Lava Cake,Sunken,17,2,6,1,888
+655,Griefer,Hedge Seed,Sunken,17,1,2,1,351
+656,Griefer,Hedge Seed,Sunken,17,1,59,1,1329
+657,Griefer,Lava Cake,Sunken,17,1,17,1,427
+658,Griefer,Hedge Seed,Sunken,17,1,0,1,307
+659,Griefer,Hedge Seed,Sunken,17,1,0,1,400
+660,Griefer,Lava Cake,Sunken,17,0,4,1,543
+661,Griefer,Hedge Seed,Sunken,17,3,17,1,859
+662,Griefer,Lava Cake,Sunken,17,1,43,1,1305
+663,Skirmisher,Hedge Seed,Sunken,17,0,2,1,481
+664,Griefer,Lava Cake,Sunken,17,0,2,1,220
+665,Griefer,Hedge Seed,Sunken,17,1,11,1,592
+666,Skirmisher,Hedge Seed,Sunken,17,0,2,1,504
+667,Griefer,Lava Cake,Sunken,17,1,5,1,433
+668,Griefer,Hedge Seed,Sunken,17,4,76,1,1423
+669,Griefer,Lava Cake,Sunken,17,0,0,1,287
+670,Skirmisher,Hedge Seed,Sunken,17,1,4,1,517
+671,Griefer,Hedge Seed,Sunken,17,1,1,1,244
+672,Griefer,Lava Cake,Sunken,17,0,0,1,181
+673,Griefer,Lava Cake,Sunken,17,1,18,1,868
+674,Griefer,Hedge Seed,Sunken,17,1,9,1,360
+675,Griefer,Lava Cake,Sunken,17,0,2,1,319
+676,Hexblade,Hedge Seed,Sunken,17,2,4,1,522
+677,Griefer,Lava Cake,Sunken,17,0,16,1,521
+678,Griefer,Hedge Seed,Sunken,17,1,28,1,555
+679,Dancer,Accelerator,Sunken,17,2,8,1,353
+680,Griefer,Lava Cake,Sunken,17,3,30,1,744
+681,Hexblade,Hedge Seed,Sunken,17,0,18,1,579
+682,Griefer,Lava Cake,Sunken,17,0,15,1,539
+683,Griefer,Hedge Seed,Sunken,17,0,12,1,292
+684,Frost Knight,Hedge Seed,Sunken,17,2,12,1,627
+685,Griefer,Hedge Seed,Sunken,17,1,9,1,459
+686,Griefer,Lava Cake,Sunken,17,0,7,1,669
+687,Griefer,Lava Cake,Sunken,17,1,28,1,325
+688,Frost Knight,Nox Bomb,Sunken,17,1,11,1,577
+689,Frost Knight,Hedge Seed,Sunken,17,0,12,1,652
+690,Griefer,Hedge Seed,Sunken,17,1,15,1,240
+691,Griefer,Lava Cake,Sunken,17,3,13,1,1103
+692,Griefer,Hedge Seed,Sunken,17,0,18,1,414
+693,Griefer,Lava Cake,Sunken,17,1,1,1,258
+694,Frost Knight,Nox Bomb,Sunken,17,1,20,1,671
+695,Frost Knight,Hedge Seed,Sunken,17,1,7,1,549
+696,Griefer,Lava Cake,Sunken,17,2,9,1,729
+697,Battlesmith,Nox Bomb,Sunken,17,1,18,1,366
+698,Frost Knight,Nox Bomb,Sunken,17,1,18,1,542
+699,Frost Knight,Hedge Seed,Sunken,17,0,2,1,254
+700,Griefer,Lava Cake,Sunken,17,2,21,1,454
+701,Battlesmith,Nox Bomb,Sunken,17,0,4,1,238
+702,Griefer,Lava Cake,Sunken,17,0,25,1,815
+703,Frost Knight,Hedge Seed,Sunken,17,2,48,1,532
+704,Battlesmith,Nox Bomb,Sunken,17,0,0,1,255
+705,Griefer,Lava Cake,Sunken,17,2,13,1,478
+706,Frost Knight,Nox Bomb,Sunken,17,2,37,1,747
+707,Battlesmith,Nox Bomb,Sunken,17,0,5,1,183
+708,Frost Knight,Hedge Seed,Sunken,17,1,47,1,1892
+709,Griefer,Lava Cake,Sunken,17,1,3,1,474
+710,Battlesmith,Nox Bomb,Sunken,17,1,4,1,484
+711,Griefer,Lava Cake,Sunken,17,1,36,1,574
+712,Frost Knight,Nox Bomb,Sunken,17,2,11,1,644
+713,Griefer,Lava Cake,Sunken,17,1,21,1,771
+714,Battlesmith,Nox Bomb,Sunken,17,0,2,1,341
+715,Griefer,Lava Cake,Sunken,17,0,8,1,882
+716,Frost Knight,Nox Bomb,Sunken,17,1,3,1,329
+717,Battlesmith,Nox Bomb,Sunken,17,1,4,1,331
+718,Griefer,Lava Cake,Sunken,17,1,19,1,614
+719,Frost Knight,Nox Bomb,Sunken,17,3,28,1,1117
+720,Battlesmith,Nox Bomb,Sunken,17,0,0,1,232
+721,Griefer,Lava Cake,Sunken,17,0,48,1,508
+722,Frost Knight,Hedge Seed,Sunken,17,4,55,1,1144
+723,Battlesmith,Nox Bomb,Sunken,17,0,0,1,320
+724,Griefer,Lava Cake,Sunken,17,1,3,1,351
+725,Griefer,Lava Cake,Sunken,17,0,6,1,454
+726,Battlesmith,Nox Bomb,Sunken,17,0,18,1,495
+727,Griefer,Lava Cake,Sunken,17,1,0,1,197
+728,Frost Knight,Nox Bomb,Sunken,17,1,46,1,348
+729,Griefer,Lava Cake,Sunken,17,1,13,1,362
+730,Griefer,Lava Cake,Sunken,17,1,17,1,465
+731,Battlesmith,Nox Bomb,Sunken,17,1,27,1,300
+732,Frost Knight,Hedge Seed,Sunken,17,0,6,1,457
+733,Frost Knight,Nox Bomb,Sunken,17,2,46,1,869
+734,Griefer,Lava Cake,Sunken,17,2,5,1,352
+735,Battlesmith,Nox Bomb,Sunken,17,0,1,1,184
+736,Griefer,Lava Cake,Sunken,17,1,5,1,720
+737,Battlesmith,Nox Bomb,Sunken,17,1,27,1,666
+738,Frost Knight,Hedge Seed,Sunken,17,1,56,0,0
+739,Griefer,Lava Cake,Sunken,17,0,4,0,0
+740,Frost Knight,Nox Bomb,Sunken,17,0,2,0,0
+741,Griefer,Lava Cake,Sunken,17,0,2,0,0
+742,Battlesmith,Nox Bomb,Sunken,17,0,0,0,0

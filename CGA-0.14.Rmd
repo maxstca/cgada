@@ -87,9 +87,10 @@ entries2 <- read_in_data(fileName = "v0_14_1_d01_25_2026.csv", playtestDate = "0
 entries3 <- read_in_data(fileName = "v0_14_1_d03_15_2026.csv", playtestDate = "03/15/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
 entries4 <- read_in_data(fileName = "v0_14_1_d03_22_2026.csv", playtestDate = "03/22/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
 entries5 <- read_in_data(fileName = "v0_14_1_d04_19_2026.csv", playtestDate = "04/19/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries6 <- read_in_data(fileName = "v0_14_1_d04_26_2026.csv", playtestDate = "04/26/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(entries1, entries2, entries3, entries4, entries5)
+dflist <- list(entries1, entries2, entries3, entries4, entries5, entries6)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
