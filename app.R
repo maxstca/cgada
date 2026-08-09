@@ -14,12 +14,28 @@ theme_set(theme_clean())
 
 #Load in datasets, one per individual playtest
 entries1 <- read_in_data(fileName = "data/v0_14_1_d01_04_2026.csv", playtestDate = "01/04/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries2 <- read_in_data(fileName = "data/v0_14_1_d01_25_2026.csv", playtestDate = "01/25/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries3 <- read_in_data(fileName = "data/v0_14_1_d03_15_2026.csv", playtestDate = "03/15/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries4 <- read_in_data(fileName = "data/v0_14_1_d03_22_2026.csv", playtestDate = "03/22/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries5 <- read_in_data(fileName = "data/v0_14_1_d04_19_2026.csv", playtestDate = "04/19/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries6 <- read_in_data(fileName = "data/v0_14_1_d04_26_2026.csv", playtestDate = "04/26/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries7 <- read_in_data(fileName = "data/v0_14_2_d05_03_2026.csv", playtestDate = "05/03/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries8 <- read_in_data(fileName = "data/v0_14_2_d05_17_2026.csv", playtestDate = "05/17/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries9 <- read_in_data(fileName = "data/v0_14_2_d06_07_2026.csv", playtestDate = "06/07/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
+entries10 <- read_in_data(fileName = "data/v0_15_0_d07_05_2026.csv", playtestDate = "07/05/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
+entries11 <- read_in_data(fileName = "data/v0_15_0_d07_12_2026.csv", playtestDate = "07/12/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(entries1)
+dflist <- list(entries1, entries2, entries3, entries4, entries5, entries6, entries7, entries8, entries9, entries10, entries11)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
+
+#Grab distinct observations for categorical variables
+classes <- unique(cgada$Class)
+trinkets <- unique(cgada$Trinket)
+maps <- unique(cgada$Map)
+versions <- unique(cgada$Version)
 
 # UI
 
@@ -31,22 +47,39 @@ ui <- fluidPage(
     
     #Background info on CGA and CGADA
     nav_panel("Home",
-              div(a("Cash Grab Arena", href = "https://github.com/HazilTheNut/cashgrab/wiki"), "is a free-for-all, PvP arena game created within Minecraft using datapacks created by HazilTheNut."),
+              div(a("Cash Grab Arena", href = "https://github.com/HazilTheNut/cashgrab/wiki"), "is a free-for-all, PvP arena game within Minecraft created by HazilTheNut."),
               div("The Cash Grab Arena Data Viewer is a tool built to visualize and analyze data collected from playtests of Cash Grab Arena created by Makse."),
               br(),
               div("The data used here is recorded under the following parameters:"),
               div("- Time Limit: 15 minutes"),
               div("- Coin Goal: 100 coins"),
               div("- 4+ players each game"),
+              div("- Only observations where the player died (referred to as `Complete` observations) are kept"),
               br(),
-              div(glue("A total of {length(cgada$ID)} lives were played across {length(dflist)} playtests. The total playtime (in active games) on this version of Cash Grab was {round(sum(cgada$Lifetime) / 60 / 60, 2)} hours. Thank you to all who participated!"))
+              div(glue("A total of {length(cgada$ID)} lives were played across {length(dflist)} playtests. The total playtime (in active games) across these Cash Grab playtests was {round(sum(cgada$Lifetime) / 60 / 60, 2)} hours. Thank you to all who participated!"))
               ),
     
     nav_panel("Bar Charts"),
     
     nav_panel("Other Plots"),
     
-    nav_panel("Fun Facts")
+    nav_panel("Fun Facts"),
+    
+    nav_panel("Raw Data",
+              
+              sidebarPanel(
+                selectInput("raw.versionfilter", "Filter by Version: ", choices = c("-- NONE --" = "", versions), multiple = TRUE),
+                selectInput("raw.classfilter", "Filter by Class: ", choices = c("-- NONE --" = "", classes), multiple = TRUE),
+                selectInput("raw.trinketfilter", "Filter by Trinket: ", choices = c("-- NONE --" = "", trinkets), multiple = TRUE),
+                selectInput("raw.mapfilter", "Filter by Map: ", choices = c("-- NONE --" = "", maps), multiple = TRUE),
+              ),
+              
+              mainPanel(
+                tableOutput("summary_table"),
+                tableOutput("table")
+              )
+              
+              )
     
   )
   
@@ -56,7 +89,33 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   
+  # Reactive objects
   
+  tableData <- reactive({
+    cgada |>
+      filter(is.null(input$raw.versionfilter) | Version %in% input$raw.versionfilter,
+             is.null(input$raw.classfilter) | Class %in% input$raw.classfilter,
+             is.null(input$raw.trinketfilter) | Trinket %in% input$raw.trinketfilter,
+             is.null(input$raw.mapfilter) | Map %in% input$raw.mapfilter
+      )
+  })
+  
+  # Outputs
+  
+  output$table <- renderTable(tableData())
+  
+  output$summary_table <- renderTable({
+    tableData() |>
+      summarise(
+        'Lives Played' = n(),
+        'Avg. Lifetime (seconds)' = mean(Lifetime),
+        'Std. Deviation in Lifetime' = sd(Lifetime),
+        'Avg. Kills per Life' = mean(Kills),
+        'Std. Deviation in Kills per Life' = sd(Kills),
+        'Avg. Coins per Life' = mean(Coins),
+        'Std. Deviation in Coins per Life' = sd(Coins)
+      )
+  })
   
 }
 

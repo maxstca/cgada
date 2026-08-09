@@ -32,6 +32,8 @@ merge_playtests <- function(dataframes) {
     out <- rbind(out, dataframes[[i]])
   }
   
+  out$ID <- as.integer(out$ID)
+  
   return(out)
 }
 
@@ -45,4 +47,3 @@ generate_seqID <- function(x) {
     ungroup()
   
 }
-
