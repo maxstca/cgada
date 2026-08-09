@@ -61,7 +61,18 @@ ui <- fluidPage(
     
     nav_panel("Bar Charts"),
     
-    nav_panel("Other Plots"),
+    nav_panel("Other Plots",
+              
+              sidebarPanel(
+                selectInput("other.versionfilter", "Filter by Version (Kills vs. Coins): ", choices = c("-- NONE --" = "", versions)),
+              ),
+              
+              mainPanel(
+                plotOutput("killsversuscoins"),
+                plotOutput("coinsovertime")
+              )
+              
+              ),
     
     nav_panel("Fun Facts"),
     
@@ -72,6 +83,7 @@ ui <- fluidPage(
                 selectInput("raw.classfilter", "Filter by Class: ", choices = c("-- NONE --" = "", classes), multiple = TRUE),
                 selectInput("raw.trinketfilter", "Filter by Trinket: ", choices = c("-- NONE --" = "", trinkets), multiple = TRUE),
                 selectInput("raw.mapfilter", "Filter by Map: ", choices = c("-- NONE --" = "", maps), multiple = TRUE),
+                downloadButton("savedata", "Save current output")
               ),
               
               mainPanel(
@@ -102,6 +114,40 @@ server <- function(input, output, session) {
   
   # Outputs
   
+  output$killsversuscoins <- renderPlot({
+    cgada |>
+      filter(!nzchar(input$other.versionfilter) | Version %in% input$other.versionfilter) |>
+      group_by(Class) |>
+      summarise(Entry = n(),
+                KPE = sum(Kills) / sum(Entry),
+                CPE = sum(Coins) / sum(Entry)) |>
+      ggplot(aes(x = KPE, y = CPE, color = Class, label = Class)) +
+      geom_point(position =) + geom_text_repel() +
+      xlab("Kills per Entry") + ylab("Coins per Entry") +
+      labs(title = "Class Specializations: Kills per Entry vs. Coins per Entry") +
+      geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "gray") +
+      geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "gray") +
+      theme(legend.position = "none") +
+      annotate(geom = "text", x = -Inf, y = Inf, hjust = -0.1, vjust = 1.1, label = "Coin-specialized", color = "black", alpha = 0.4) +
+      annotate(geom = "text", x = Inf, y = Inf, hjust = 1.1, vjust = 1.1, label = "High Event", color = "black", alpha = 0.4) +
+      annotate(geom = "text", x = -Inf, y = -Inf, hjust = -0.1, vjust = -0.2, label = "Low Event", color = "black", alpha = 0.4) +
+      annotate(geom = "text", x = Inf, y = -Inf, hjust = 1.1, vjust = -0.2, label = "Kill-specialized", color = "black", alpha = 0.4) +
+      theme(panel.grid.major.y = element_blank(),
+            panel.grid.minor = element_blank())
+    })
+  
+  output$coinsovertime <- renderPlot(cgada |>
+    group_by(Game_ID) |>
+    ggplot(aes(x = seqID, y = Coins, color = Map)) +
+    geom_point() +
+    geom_line() +
+    stat_summary(aes(group = 1), geom = "line", fun.y = mean, size = 1.5, color = "black") +
+    stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
+    labs(title = "Coins Over Time (All Observations)",
+         caption = "Bold line is the average coins per life across all games played for the given sequential ID.
+       Ribbon indicates error bounds of one standard deviaton above and below the average coins per life.") + xlab("Sequential Entry ID")
+    )
+  
   output$table <- renderTable(tableData())
   
   output$summary_table <- renderTable({
@@ -116,6 +162,13 @@ server <- function(input, output, session) {
         'Std. Deviation in Coins per Life' = sd(Coins)
       )
   })
+  
+  output$savedata <- downloadHandler(
+    filename = "Cash Grab Arena data.csv",
+    content = function(file) {
+      write.csv(tableData(), file)
+    }
+  )
   
 }
 
