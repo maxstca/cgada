@@ -24,9 +24,10 @@ entries8 <- read_in_data(fileName = "data/v0_14_2_d05_17_2026.csv", playtestDate
 entries9 <- read_in_data(fileName = "data/v0_14_2_d06_07_2026.csv", playtestDate = "06/07/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
 entries10 <- read_in_data(fileName = "data/v0_15_0_d07_05_2026.csv", playtestDate = "07/05/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
 entries11 <- read_in_data(fileName = "data/v0_15_0_d07_12_2026.csv", playtestDate = "07/12/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
+entries12 <- read_in_data(fileName = "data/v0_15_0_d08_30_2026.csv", playtestDate = "08/30/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
 
 #Merge obs. into one set of data
-dflist <- list(entries1, entries2, entries3, entries4, entries5, entries6, entries7, entries8, entries9, entries10, entries11)
+dflist <- list(entries1, entries2, entries3, entries4, entries5, entries6, entries7, entries8, entries9, entries10, entries11, entries12)
 cgada <- merge_playtests(dflist)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
@@ -53,6 +54,7 @@ ui <- fluidPage(
               div("The data used here is recorded under the following parameters:"),
               div("- Time Limit: 15 minutes"),
               div("- Coin Goal: 100 coins"),
+              div("- Version: v0.14.0-current"),
               div("- 4+ players each game"),
               div("- Only observations where the player died (referred to as `Complete` observations) are kept"),
               br(),
