@@ -29,7 +29,7 @@ varnames <- c("Class", "Entries", "Coins", "Kills", "Deaths", "Vigor.Flask.Entri
             )
 
 # Read in data and clean column names
-setwd("data")
+setwd("data_old")
 
 march16 <- read.csv("March 16 2025.csv", TRUE)
 colnames(march16) <- varnames
