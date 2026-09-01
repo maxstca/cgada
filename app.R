@@ -12,23 +12,27 @@ source("helpers.R")
 #Set ggplot theme
 theme_set(theme_clean())
 
-#Load in datasets, one per individual playtest
-entries1 <- read_in_data(fileName = "data/v0_14_1_d01_04_2026.csv", playtestDate = "01/04/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries2 <- read_in_data(fileName = "data/v0_14_1_d01_25_2026.csv", playtestDate = "01/25/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries3 <- read_in_data(fileName = "data/v0_14_1_d03_15_2026.csv", playtestDate = "03/15/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries4 <- read_in_data(fileName = "data/v0_14_1_d03_22_2026.csv", playtestDate = "03/22/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries5 <- read_in_data(fileName = "data/v0_14_1_d04_19_2026.csv", playtestDate = "04/19/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries6 <- read_in_data(fileName = "data/v0_14_1_d04_26_2026.csv", playtestDate = "04/26/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries7 <- read_in_data(fileName = "data/v0_14_2_d05_03_2026.csv", playtestDate = "05/03/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries8 <- read_in_data(fileName = "data/v0_14_2_d05_17_2026.csv", playtestDate = "05/17/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries9 <- read_in_data(fileName = "data/v0_14_2_d06_07_2026.csv", playtestDate = "06/07/2026", playtestVersion = "0.14.*", hasHeaders = TRUE)
-entries10 <- read_in_data(fileName = "data/v0_15_0_d07_05_2026.csv", playtestDate = "07/05/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
-entries11 <- read_in_data(fileName = "data/v0_15_0_d07_12_2026.csv", playtestDate = "07/12/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
-entries12 <- read_in_data(fileName = "data/v0_15_0_d08_30_2026.csv", playtestDate = "08/30/2026", playtestVersion = "0.15.*", hasHeaders = TRUE)
+#Grab a list of filenames
+folder_path <- "data"
+file_list <- list.files(path = folder_path, pattern = "\\.csv$", full.names = TRUE)
 
-#Merge obs. into one set of data
-dflist <- list(entries1, entries2, entries3, entries4, entries5, entries6, entries7, entries8, entries9, entries10, entries11, entries12)
-cgada <- merge_playtests(dflist)
+df_list <- list()
+
+for (f in file_list) {
+  
+  #Get necessary args
+  date_arg <- gsub("_", "/", substring(f,7,12))
+  version_arg <- sub(".$", "*", gsub("_", ".", substring(f,7,12)))
+  
+  #Read in file
+  df <- read_in_data(fileName = f, playtestDate = date_arg, playtestVersion = version_arg, hasHeaders = TRUE)
+  
+  #Add it to the list
+  fname <- basename(f)
+  df_list[[fname]] <- df
+}
+
+cgada <- merge_playtests(df_list)
 cgada <- generate_seqID(cgada) |>
   filter(Is_Complete == TRUE)
 
@@ -58,7 +62,7 @@ ui <- fluidPage(
               div("- 4+ players each game"),
               div("- Only observations where the player died (referred to as `Complete` observations) are kept"),
               br(),
-              div(glue("A total of {length(cgada$ID)} lives were played across {length(dflist)} playtests. The total playtime (in active games) across these Cash Grab playtests was {round(sum(cgada$Lifetime) / 60 / 60, 2)} hours. Thank you to all who participated!"))
+              div(glue("A total of {length(cgada$ID)} lives were played across {length(df_list)} playtests. The total playtime (in active games) across these Cash Grab playtests was {round(sum(cgada$Lifetime) / 60 / 60, 2)} hours. Thank you to all who participated!"))
               ),
     
     nav_panel("Bar Charts"),

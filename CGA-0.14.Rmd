@@ -230,6 +230,7 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
 )
 ```
+
 ```{r echo=FALSE}
 suppressMessages(
   cgada |>
@@ -279,6 +280,7 @@ suppressMessages(
   geom_hline(yintercept = sum(cgada$Kills) / nrow(cgada), color = "red")
 )
 ```
+
 ```{r echo = FALSE}
 suppressMessages(
   cgada |>
@@ -355,13 +357,13 @@ suppressMessages(
 
 The purpose of this plot is two-fold:
 
-1. The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, it is worth looking to see if the average number of coins earned changes over time in a meaningful way, as it could directly influence our other visualizations.
+1.  The design of Cash Grab is such that that every time a player steps on a plate, 2 more coins enter the "economy" so to speak. As such, it is worth looking to see if the average number of coins earned changes over time in a meaningful way, as it could directly influence our other visualizations.
 
-2. It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
+2.  It's fairly certain that the variance in kills should remain constant over time, as the general parameters of combat in cash grab do not change on a per-life basis. However, the coins that each player holds does change significantly, so it is far less certain how the coins per life will vary. By plotting this, we can get a general understanding of how the passage of time within each game effects the way players earn coins. Some characteristics to look for: lines on the plot branching out to higher and lower extremes as the sequential entry ID goes up (fanning or increasing variance over time), lines on the plot converging towards the average (funneling or decreasing variance over time), or a generally constant block that follows the same patterns that the average does (constant variance over time).
 
 ### Kills per Entry versus Coins per Entry
 
-There are two main metrics of which we measure class performance within Cash Grab: Kills per Entry/Life Played (KPE) and Coins per Entry (CPE). Since coins are the win condition of the game and getting kills consistently is vital to reaching that goal, it is important to make sure that a singular class can balance those two facets of the game effectively. If a class is strong at collecting coins (which usually manifests as map control abilities), it should be vulnerable  against more selfish classes that prioritize advantages in combat. 
+There are two main metrics of which we measure class performance within Cash Grab: Kills per Entry/Life Played (KPE) and Coins per Entry (CPE). Since coins are the win condition of the game and getting kills consistently is vital to reaching that goal, it is important to make sure that a singular class can balance those two facets of the game effectively. If a class is strong at collecting coins (which usually manifests as map control abilities), it should be vulnerable against more selfish classes that prioritize advantages in combat.
 
 In the past, we've displayed this as relative efficiency, which scales the metrics against each other and attempts to show how specialized a class is:
 
