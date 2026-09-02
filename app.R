@@ -5,6 +5,7 @@ library(ggthemes)
 library(ggplot2)
 library(tidyverse)
 library(glue)
+library(DT)
 
 #Helper files
 source("helpers.R")
@@ -101,8 +102,6 @@ ui <- fluidPage(
               
               ),
     
-    nav_panel("Fun Facts"),
-    
     nav_panel("Raw Data",
               
               sidebarPanel(
@@ -116,7 +115,7 @@ ui <- fluidPage(
               mainPanel(
                 tableOutput("summary_table"),
                 br(),
-                tableOutput("table")
+                DT::dataTableOutput("table")
               )
               
               )
@@ -229,7 +228,9 @@ server <- function(input, output, session) {
        Ribbon indicates error bounds of one standard deviaton above and below the average coins per life.") + xlab("Sequential Entry ID")
     )
   
-  output$table <- renderTable(tableData())
+  output$table <- DT::renderDataTable({
+    datatable(tableData(),options = list(ordering = TRUE))
+  })
   
   output$summary_table <- renderTable({
     tableData() |>
