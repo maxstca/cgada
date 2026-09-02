@@ -14,7 +14,10 @@ read_in_data <- function(fileName, playtestDate = "99/99/9999", playtestVersion 
   out <- out |>
     mutate(Date = playtestDate,
            Version = playtestVersion,
-           Lifetime = Lifetime / 20)
+           Lifetime = Lifetime / 20,
+           Class = case_match(Class, #Manually replace instances of "Artillery" with "Archer" is this class' name was updated in v0.15.0
+                              "Artillery" ~ "Archer",
+                              .default = Class))
   return(out)
 }
 

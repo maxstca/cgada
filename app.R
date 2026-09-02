@@ -21,7 +21,7 @@ df_list <- list()
 for (f in file_list) {
   
   #Get necessary args
-  date_arg <- gsub("_", "/", substring(f,7,12))
+  date_arg <- gsub("_", "/", substring(f,15,24))
   version_arg <- sub(".$", "*", gsub("_", ".", substring(f,7,12)))
   
   #Read in file
@@ -65,16 +65,37 @@ ui <- fluidPage(
               div(glue("A total of {length(cgada$ID)} lives were played across {length(df_list)} playtests. The total playtime (in active games) across these Cash Grab playtests was {round(sum(cgada$Lifetime) / 60 / 60, 2)} hours. Thank you to all who participated!"))
               ),
     
-    nav_panel("Bar Charts"),
+    nav_panel("Bar Charts",
+              sidebarPanel(
+                selectInput("bar.versionfilter", "Filter by Version: ", choices = c("-- NONE --" = "", versions)),
+                div(tags$b(tags$u("Entry-based Measurements"))),
+                br(),
+                selectInput("entry.x","Choose Category:", choices = c("Class", "Trinket", "Map")),
+                selectInput("entry.y","Choose Measurement:", choices = c("Kills", "Coins", "Lifetime")),
+                div("NOTE: Lifetime is measured in seconds."),
+                br(),
+                div(tags$b(tags$u("Popularity Measurements"))),
+                br(),
+                selectInput("popularity.x","Choose Category:", choices = c("Class", "Trinket", "Map")),
+                br(),
+              ),
+              
+              mainPanel(
+                plotOutput("entry"),
+                br(),
+                plotOutput("popularity")
+              )
+              ),
     
     nav_panel("Other Plots",
               
               sidebarPanel(
-                selectInput("other.versionfilter", "Filter by Version (Kills vs. Coins): ", choices = c("-- NONE --" = "", versions)),
+                selectInput("other.versionfilter", "Filter by Version (Kills vs. Coins): ", choices = c("-- NONE --" = "", versions))
               ),
               
               mainPanel(
                 plotOutput("killsversuscoins"),
+                br(),
                 plotOutput("coinsovertime")
               )
               
@@ -94,6 +115,7 @@ ui <- fluidPage(
               
               mainPanel(
                 tableOutput("summary_table"),
+                br(),
                 tableOutput("table")
               )
               
@@ -119,6 +141,59 @@ server <- function(input, output, session) {
   })
   
   # Outputs
+  
+  output$entry <- renderPlot({
+    cgada |>
+      filter(!nzchar(input$bar.versionfilter) | Version %in% input$bar.versionfilter) |>
+      group_by(!!sym(input$entry.x)) |>
+        summarize(Entry = n(),
+                  Ratio = sum(!!sym(input$entry.y)) / sum(Entry),
+                  sd = sd(!!sym(input$entry.y)),
+                  se = sd / sqrt(Entry)) |>
+      ggplot(aes(x = !!sym(input$entry.x), y = Ratio)) +
+      geom_bar(stat = "identity", color = "black", fill = "lightblue") +
+      theme(legend.position = "none") +
+      xlab(input$entry.x) + ylab(input$entry.y) +
+      labs(title = glue("{input$entry.x} {input$entry.y} per Entry"),
+           caption = glue("Red line indicates the average {input$entry.y} per Entry, regardless of {input$entry.x}.
+                          Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.")) +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      geom_errorbar(aes(ymin = Ratio - se,
+                        ymax = Ratio + se),
+                    width = 0.5) +
+      geom_hline(yintercept = sum(cgada |>
+                   filter(!nzchar(input$bar.versionfilter) | Version %in% input$bar.versionfilter) |>
+                   select(!!sym(input$entry.y))) 
+                   / nrow(cgada |>
+                     filter(!nzchar(input$bar.versionfilter) | Version %in% input$bar.versionfilter)), color = "red")
+                  
+  })
+  
+  output$popularity <- renderPlot({
+    cgada |>
+      filter(!nzchar(input$bar.versionfilter) | Version %in% input$bar.versionfilter) |>
+      group_by(!!sym(input$popularity.x), Date) |>
+      summarize(Pop = sum(Lifetime) / 60) |>
+      ungroup() |>
+      group_by(!!sym(input$popularity.x)) |>
+      summarize(sd = sd(Pop),
+                PopTotal = sum(Pop),
+                .groups = "drop") |>
+      ggplot(aes(x = !!sym(input$popularity.x), y = PopTotal)) +
+      geom_bar(stat = "identity", color = "black", fill = "pink2") +
+      theme(legend.position = "none") +
+      xlab(input$popularity.x) + ylab("Time Played (minutes)") +
+      labs(title = glue("{input$popularity.x} Playtime"),
+           caption = glue("Red line indicates expected popularity, assuming each {input$popularity.x} is equally played.
+                          Error bars indicate values which we could likely observe if we repeated a sample of the same number of playtests.")) +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      geom_errorbar(aes(ymin = PopTotal - sd,
+                        ymax = PopTotal + sd),
+                    width = 0.5) +
+      geom_hline(yintercept = (sum(cgada |>
+                                     filter(!nzchar(input$bar.versionfilter) | Version %in% input$bar.versionfilter) |>
+                                     select(Lifetime)) / 60) / nrow(distinct(cgada, !!(sym(input$popularity.x)))), color = "red")
+  })
   
   output$killsversuscoins <- renderPlot({
     cgada |>
