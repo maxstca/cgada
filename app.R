@@ -6,6 +6,10 @@ library(ggplot2)
 library(tidyverse)
 library(glue)
 library(DT)
+library(Cairo)
+
+#Enable Cairo for clearer graphics in the end product
+options(shiny.usecairo = TRUE)
 
 #Helper files
 source("helpers.R")
@@ -82,9 +86,9 @@ ui <- fluidPage(
               ),
               
               mainPanel(
-                plotOutput("entry"),
+                plotOutput("entry", height = "570px", width = "80%"),
                 br(),
-                plotOutput("popularity")
+                plotOutput("popularity", height = "570px", width = "80%")
               )
               ),
     
@@ -156,7 +160,10 @@ server <- function(input, output, session) {
       labs(title = glue("{input$entry.x} {input$entry.y} per Entry"),
            caption = glue("Red line indicates the average {input$entry.y} per Entry, regardless of {input$entry.x}.
                           Error bars indicate values which we could likely observe on repeated playtests, accounting for sample size.")) +
-      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 12),
+            axis.text.y = element_text(size = 12),
+            axis.title = element_text(size = 14, face = "bold"),
+            plot.caption = element_text(size = 12)) +
       geom_errorbar(aes(ymin = Ratio - se,
                         ymax = Ratio + se),
                     width = 0.5) +
@@ -183,9 +190,12 @@ server <- function(input, output, session) {
       theme(legend.position = "none") +
       xlab(input$popularity.x) + ylab("Time Played (minutes)") +
       labs(title = glue("{input$popularity.x} Playtime"),
-           caption = glue("Red line indicates expected popularity, assuming each {input$popularity.x} is equally played.
+           caption = glue("The red line indicates expected popularity, assuming each {input$popularity.x} is equally played.
                           Error bars indicate values which we could likely observe if we repeated a sample of the same number of playtests.")) +
-      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) +
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 12),
+            axis.text.y = element_text(size = 12),
+            axis.title = element_text(size = 14, face = "bold"),
+            plot.caption = element_text(size = 12)) +
       geom_errorbar(aes(ymin = PopTotal - sd,
                         ymax = PopTotal + sd),
                     width = 0.5) +
