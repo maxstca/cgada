@@ -10,6 +10,32 @@
     "has_parameters": false
   },
   "packages": {
+    "Cairo": {
+      "Source": "CRAN",
+      "Repository": "https://cran.rstudio.com",
+      "description": {
+        "Package": "Cairo",
+        "Version": "1.7-0",
+        "Title": "R Graphics Device using Cairo Graphics Library for Creating\nHigh-Quality Bitmap (PNG, JPEG, TIFF), Vector (PDF, SVG,\nPostScript) and Display (X11 and Win32) Output",
+        "Author": "Simon Urbanek [aut, cre, cph] (https://urbanek.org, ORCID:\n    <https://orcid.org/0000-0003-2297-1732>),\n  Jeffrey Horner [aut]",
+        "Maintainer": "Simon Urbanek <Simon.Urbanek@r-project.org>",
+        "Authors@R": "c(person(\"Simon\", \"Urbanek\", role=c(\"aut\",\"cre\",\"cph\"), email=\"Simon.Urbanek@r-project.org\", comment=c(\"https://urbanek.org\", ORCID=\"0000-0003-2297-1732\")), person(\"Jeffrey\", \"Horner\", role=\"aut\", email=\"jeff.horner@vanderbilt.edu\"))",
+        "Depends": "R (>= 2.7.0)",
+        "Imports": "grDevices, graphics",
+        "Suggests": "png",
+        "Enhances": "FastRWeb",
+        "Description": "R graphics device using cairographics library that can be used to create high-quality vector (PDF, PostScript and SVG) and bitmap output (PNG,JPEG,TIFF), and high-quality rendering in displays (X11 and Win32). Since it uses the same back-end for all output, copying across formats is WYSIWYG. Files are created without the dependence on X11 or other external programs. This device supports alpha channel (semi-transparent drawing) and resulting images can contain transparent and semi-transparent regions. It is ideal for use in server environments (file output) and as a replacement for other devices that don't have Cairo's capabilities such as alpha support or anti-aliasing. Backends are modular such that any subset of backends is supported.",
+        "License": "GPL-2 | GPL-3",
+        "SystemRequirements": "cairo (>= 1.2 http://www.cairographics.org/)",
+        "URL": "http://www.rforge.net/Cairo/",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-10-29 00:32:31 UTC; rforge",
+        "Repository": "CRAN",
+        "Date/Publication": "2025-10-29 06:10:59 UTC",
+        "Built": "R 4.5.2; x86_64-w64-mingw32; 2025-11-01 00:39:36 UTC; windows",
+        "Archs": "x64"
+      }
+    },
     "DBI": {
       "Source": "CRAN",
       "Repository": "https://cran.rstudio.com",
@@ -3442,10 +3468,10 @@
   },
   "files": {
     ".RData": {
-      "checksum": "c9cce21ab32b7fc8679cf5208c567e0a"
+      "checksum": "f6f4564e28a3eac4931d6bfc998ac94e"
     },
     "app.R": {
-      "checksum": "f849c7e1d75e5868402ad67373568ab3"
+      "checksum": "71fca26146b8d3e9d5fdba0c29eba747"
     },
     "CGA-0.13.1.Rmd": {
       "checksum": "29ed5586718b1d8d6b73817c728994d9"
@@ -3568,7 +3594,7 @@
       "checksum": "8556071037979a69b04e413cc0da285d"
     },
     "README.md": {
-      "checksum": "748568ce509850776a31f2fbf279007c"
+      "checksum": "642e07ad943b24be248cd751cf8080cc"
     },
     "test_data.R": {
       "checksum": "ac095bac0b151002e60fc1f199a8789e"
