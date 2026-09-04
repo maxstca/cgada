@@ -57,7 +57,7 @@ ui <- fluidPage(
     
     #Background info on CGA and CGADA
     nav_panel("Home",
-              div(a("Cash Grab Arena", href = "https://github.com/HazilTheNut/cashgrab/wiki"), "is a free-for-all, PvP arena game within Minecraft created by HazilTheNut."),
+              div(a("Cash Grab Arena", href = "https://github.com/HazilTheNut/cashgrab/wiki", target = "_blank"), "is a free-for-all, PvP arena game within Minecraft created by HazilTheNut."),
               div("The Cash Grab Arena Data Viewer is a tool built to visualize and analyze data collected from playtests of Cash Grab Arena created by Makse."),
               br(),
               div("The data used here is recorded under the following parameters:"),
@@ -99,9 +99,9 @@ ui <- fluidPage(
               ),
               
               mainPanel(
-                plotOutput("killsversuscoins"),
+                plotOutput("killsversuscoins", height = "570px", width = "80%"),
                 br(),
-                plotOutput("coinsovertime")
+                plotOutput("coinsovertime", height = "570px", width = "80%")
               )
               
               ),
@@ -212,18 +212,23 @@ server <- function(input, output, session) {
                 KPE = sum(Kills) / sum(Entry),
                 CPE = sum(Coins) / sum(Entry)) |>
       ggplot(aes(x = KPE, y = CPE, color = Class, label = Class)) +
-      geom_point(position =) + geom_text_repel() +
+      geom_point() + 
+      geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "gray49") +
+      geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "gray49") +
+      geom_text_repel() +
       xlab("Kills per Entry") + ylab("Coins per Entry") +
       labs(title = "Class Specializations: Kills per Entry vs. Coins per Entry") +
-      geom_hline(yintercept = sum(cgada$Coins) / nrow(cgada), color = "gray") +
-      geom_vline(xintercept = sum(cgada$Kills) / nrow(cgada), color = "gray") +
-      theme(legend.position = "none") +
       annotate(geom = "text", x = -Inf, y = Inf, hjust = -0.1, vjust = 1.1, label = "Coin-specialized", color = "black", alpha = 0.4) +
       annotate(geom = "text", x = Inf, y = Inf, hjust = 1.1, vjust = 1.1, label = "High Event", color = "black", alpha = 0.4) +
       annotate(geom = "text", x = -Inf, y = -Inf, hjust = -0.1, vjust = -0.2, label = "Low Event", color = "black", alpha = 0.4) +
       annotate(geom = "text", x = Inf, y = -Inf, hjust = 1.1, vjust = -0.2, label = "Kill-specialized", color = "black", alpha = 0.4) +
-      theme(panel.grid.major.y = element_blank(),
-            panel.grid.minor = element_blank())
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 12),
+            axis.text.y = element_text(size = 12),
+            axis.title = element_text(size = 14, face = "bold"),
+            plot.caption = element_text(size = 12),
+            panel.grid.major.y = element_blank(),
+            panel.grid.minor = element_blank(),
+            legend.position = "hidden")
     })
   
   output$coinsovertime <- renderPlot(cgada |>
@@ -235,11 +240,15 @@ server <- function(input, output, session) {
     stat_summary(geom = "ribbon", fun.data = 'mean_sdl', mult = 1, color = "gray", alpha = 0.05) +
     labs(title = "Coins Over Time (All Observations)",
          caption = "Bold line is the average coins per life across all games played for the given sequential ID.
-       Ribbon indicates error bounds of one standard deviaton above and below the average coins per life.") + xlab("Sequential Entry ID")
+       Ribbon indicates error bounds of one standard deviaton above and below the average coins per life.") + xlab("Sequential Entry ID") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1, size = 12),
+          axis.text.y = element_text(size = 12),
+          axis.title = element_text(size = 14, face = "bold"),
+          plot.caption = element_text(size = 12))
     )
   
   output$table <- DT::renderDataTable({
-    datatable(tableData(),options = list(ordering = TRUE))
+    datatable(tableData(),options = list(ordering = TRUE, pageLength = 25))
   })
   
   output$summary_table <- renderTable({
